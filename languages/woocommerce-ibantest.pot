@@ -1,0 +1,391 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: woocommerce-ibantest\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: IBANTEST <info@ibantest.com>\n"
+"Last-Translator: IBANTEST <info@ibantest.com>\n"
+"Report-Msgid-Bugs-To: https://www.ibantest.com\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/wc-ibantest-ajax.php:81
+msgid "Will be notified separately"
+msgstr ""
+
+#: includes/wc-ibantest-encryption.php:42
+#: includes/wc-ibantest-encryption.php:52 includes/wc-ibantest-export.php:43
+#: includes/wc-ibantest-export.php:53 includes/wc-ibantest-service.php:39
+#: includes/wc-ibantest-service.php:49 woocommerce-ibantest.php:70
+#: woocommerce-ibantest.php:80
+msgid "Nope"
+msgstr ""
+
+#: includes/wc-ibantest-export.php:134
+#, php-format
+msgid "Order %s"
+msgstr ""
+
+#: includes/wc-ibantest-gateway.php:19
+msgid "SEPA Direct Debit (IBANTEST)"
+msgstr ""
+
+#: includes/wc-ibantest-gateway.php:20
+msgid "add SEPA Direct Debit as payment method"
+msgstr ""
+
+#: includes/wc-ibantest-gateway.php:145 includes/wc-ibantest-gateway.php:347
+#: includes/wc-ibantest-gateway.php:397
+msgid "IBAN"
+msgstr ""
+
+#: includes/wc-ibantest-gateway.php:150 includes/wc-ibantest-gateway.php:398
+msgid "BIC/SWIFT"
+msgstr ""
+
+#: includes/wc-ibantest-gateway.php:155 includes/wc-ibantest-gateway.php:396
+msgid "Account Holder"
+msgstr ""
+
+#: includes/wc-ibantest-gateway.php:216
+msgid "Please agree to SEPA mandate."
+msgstr ""
+
+#: includes/wc-ibantest-gateway.php:226 includes/wc-ibantest-gateway.php:232
+msgid "Please insert your IBAN."
+msgstr ""
+
+#: includes/wc-ibantest-gateway.php:238
+msgid "Please insert the account holder."
+msgstr ""
+
+#: includes/wc-ibantest-gateway.php:253
+msgid "Your BIC is invalid."
+msgstr ""
+
+#: includes/wc-ibantest-gateway.php:270
+msgid "Awaiting Direct Debit Payment"
+msgstr ""
+
+#: includes/wc-ibantest-gateway.php:322
+msgid "Payment notice:"
+msgstr ""
+
+#: includes/wc-ibantest-gateway.php:323
+msgid "The order amount will be debited directly from your bank account."
+msgstr ""
+
+#: includes/wc-ibantest-gateway.php:339
+msgid "Direct debit"
+msgstr ""
+
+#: includes/wc-ibantest-gateway.php:345
+msgid "SEPA XML Download"
+msgstr ""
+
+#: includes/wc-ibantest-gateway.php:402
+msgid "Mandate Reference ID"
+msgstr ""
+
+#: includes/wc-ibantest-gateway.php:405
+#, php-format
+msgid "We will debit %s from your account by direct debit on or shortly after %s."
+msgstr ""
+
+#: includes/wc-ibantest-gateway.php:457
+#, php-format
+msgid "If you like <b>IBANTEST for Woocommerce</b> please leave us a %1$s rating. A huge thanks in advance!"
+msgstr ""
+
+#: includes/wc-ibantest-service.php:160
+msgid "IBAN has not the correct length"
+msgstr ""
+
+#: includes/wc-ibantest-service.php:162
+msgid "IBAN contains an incorrect checksum"
+msgstr ""
+
+#: includes/wc-ibantest-service.php:164
+msgid "IBAN structure is incorrect"
+msgstr ""
+
+#: includes/wc-ibantest-service.php:166
+msgid "The account number checksum is incorrect"
+msgstr ""
+
+#: includes/wc-ibantest-service.php:168
+msgid "This bank code does not exist"
+msgstr ""
+
+#: includes/wc-ibantest-service.php:185
+msgid "IBANTEST: API Key is not configured"
+msgstr ""
+
+#: includes/wc-ibantest-service.php:191
+msgid "IBANTEST: No credits available"
+msgstr ""
+
+#: includes/wc-ibantest-service.php:196
+#, php-format
+msgid "IBANTEST: verification failed. Please check your API Key %s"
+msgstr ""
+
+#: includes/wc-ibantest-service.php:197 woocommerce-ibantest.php:148
+msgid "Settings"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:23
+msgid "Enable/Disable SEPA Direct Debit"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:24
+msgid "Enable SEPA Direct Debit"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:30
+msgid "Title"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:32
+msgid "Payment method title."
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:33
+msgid "SEPA Direct Debit"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:37
+msgid "Description"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:39
+msgid "Payment method description."
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:40
+msgid "Pay conveniently by SEPA Direct Debit."
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:44
+msgid "IBANTEST API credentials"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:45
+msgid "Create your IBANTEST account now and <b>receive 100 credits for free</b>. <br />- no annual fee<br />- no setup fee <br /> <a href=\"https://www.ibantest.com/\">https://www.ibantest.com</a>"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:49
+msgid "IBANTEST API Key"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:51
+msgid "Get your API keys from your IBANTEST account."
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:56
+msgid "Encryption"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:60
+msgid "SEPA creditor payment information"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:64
+msgid "Company name"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:68
+msgid "Company account holder"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:72
+msgid "Company account IBAN"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:76
+msgid "Company account BIC"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:80
+msgid "Company identification number"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:84
+msgid "SEPA XML Export Format"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:86
+msgid "Choose the correct format for the SEPA XML export. Please ask your bank what format is required."
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:88
+msgid "pain.001.001.03"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:89
+msgid "pain.001.002.03"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:90
+msgid "pain.008.001.02"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:91
+msgid "pain.008.002.02"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:97
+msgid "SEPA-Mandate"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:101
+msgid "SEPA Mandate Text"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:103
+msgid ""
+"[creditor_name]\n"
+"debtee identification number: [creditor_id]\n"
+"mandate reference number: [mandate_id].\n"
+"<h4>SEPA Direct Debit Mandate</h4>\n"
+"I/We herewith authorise you to collect payments from my/our account by direct debit.\n"
+"At the same time, I/we instruct my/our bank to honour direct debits drawn by\n"
+"\n"
+"Note: I/We can demand reimbursement of the debited amount within eight weeks, starting with the debit date. \n"
+"The transaction is subject to the conditions agreed with my/our bank.\n"
+"\n"
+"<strong>Debtor:</strong>\n"
+"Account holder: [creditor_account_holder]\n"
+"Street: [street]\n"
+"Postcode: [postcode]\n"
+"City: [city]\n"
+"Country: [country]\n"
+"IBAN: [creditor_account_iban]\n"
+"BIC: [creditor_agent_bic]\n"
+"\n"
+"[city], [date], [creditor_account_holder]\n"
+"\n"
+"This letter is done automatically and is valid without signature.\n"
+"\n"
+"<hr/>\n"
+"\n"
+"Please notice: Period for pre-information of the SEPA direct debit is shortened to one day."
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:130
+msgid "available placeholders: [creditor_name], [creditor_id], [mandate_id], [creditor_account_holder], [street], [postcode], [city], [country], [creditor_account_iban], [creditor_agent_bic], [city], [date]"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:133
+msgid "Checkbox agreement"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:134
+msgid "Enable \"agree to SEPA mandate\" checkbox"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:136
+msgid "If enabled, the user has to accept the SEPA Direct Debit Mandate."
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:140
+msgid "Checkbox label"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:142
+msgid "I hereby agree to the [link]SEPA Direct Debit Mandate[/link]."
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:146
+msgid "Mandate ID Format"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:148
+msgid "You can change the Mandate ID Format by adding a prefix and/or suffix. [id] is a placeholder for the automatically generated ID."
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:152
+msgid "Options"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:156
+msgid "Hide IBAN characters"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:158
+msgid "Select if you want to hide certain characters of an IBAN"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:160
+msgid "show full IBAN"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:161
+msgid "show last 3 chars"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:162
+msgid "show last 4 chars"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:163
+msgid "show first and last 3 chars"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:164
+msgid "show first and last 4 chars"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:172
+msgid "Encryption is fully configured. The data is stored in encrypted form."
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:175
+msgid "Remember for user"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:177
+msgid "Save account data as user meta if user has/creates a customer account."
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:179
+msgid "yes"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:180
+msgid "no"
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:186
+msgid "This plugin offers the possibility to store the bank data of the users (IBAN, BIC and account holder) encrypted. "
+msgstr ""
+
+#: includes/wc-ibantest-settings.php:187
+#, php-format
+msgid "If you want to use encryption, just insert the following code in your <a href=\"%s\" target=\"_blank\">wp-config.php</a> "
+msgstr ""
+
+#: includes/wc-ibantest-sidebar.php:43
+msgid "Remaining credits"
+msgstr ""
+
+#: templates/emails/email-sepa-data.php:11
+msgid "SEPA direct debit data"
+msgstr ""
+
+#: templates/emails/email-sepa-data.php:21
+msgid "SEPA direct debit mandate"
+msgstr ""
+
+#: woocommerce-ibantest.php:149
+msgid "Support"
+msgstr ""

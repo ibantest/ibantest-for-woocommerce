@@ -1,0 +1,15 @@
+{
+    "name": "ibantest/woocommerce-ibantest",
+    "type": "project",
+    "require": {
+        "ibantest/ibantest-php": "^1.0",
+        "defuse/php-encryption": "^2.2",
+        "digitick/sepa-xml": "^1.2"
+    },
+    "authors": [
+        {
+            "name": "IBANTEST",
+            "email": "info@ibantest.com"
+        }
+    ]
+}

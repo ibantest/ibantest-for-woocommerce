@@ -1,0 +1,78 @@
+@media (min-width: 880px) {
+	.ibantest-wrapper:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.ibantest-main {
+		width: 70%;
+		float: left;
+		padding: 0 2% 0 0;
+		border-right: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+
+	.ibantest-sidebar {
+		width: 28%;
+		max-width: 350px;
+		margin-left: 2%;
+		float: left;
+		box-sizing: border-box;
+		text-align: center;
+		font-family: ibantest, sans-serif;
+	}
+}
+
+.ibantest-settings-logo {
+	display: block;
+	margin: 20px 0;
+}
+
+.ibantest-sidebar h3 {
+	font-family: ibantestHeadline, sans-serif;
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+.remaining-credits {
+	font-size: 18px;
+	color: #005FA6;
+	font-weight: bold;
+}
+
+a.ibantest-button {
+	display: inline-block;
+	background: #005FA6;
+	color: #fff;
+	text-decoration: none;
+	padding: 0.75em 2em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ibantest-sidebar p {
+	margin-bottom: 1.5em;
+}
+
+.ibantest-sidebar img {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.ibantest-sidebar-panel {
+	border: 1px solid #333;
+	padding: 20px;
+}
+
+.wc-settings-sub-title a, .wc-settings-sub-title a:hover, .wc-settings-sub-title a:click, .wc-settings-sub-title a:visited, .wc-settings-sub-title a:focus {
+	border:none;
+	outline:none;
+	text-decoration:none;
+	color:black;
+}
+

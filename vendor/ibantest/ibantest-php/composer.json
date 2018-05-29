@@ -1,0 +1,32 @@
+{
+  "name": "ibantest/ibantest-php",
+  "description": "PHP client of IBANTEST API",
+  "require": {
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ibantest\\": "src/Ibantest"
+    }
+  },
+  "homepage": "https://www.ibantest.com/",
+  "keywords": [
+    "iban",
+    "validation",
+    "bic",
+    "sepa",
+    "swift-code",
+    "calculator",
+    "bank code",
+    "REST-API",
+    "php"
+  ],
+  "type": "library",
+  "authors": [
+    {
+      "name": "IBANTEST",
+      "email": "info@ibantest.com"
+    }
+  ],
+  "license": "MIT"
+}
