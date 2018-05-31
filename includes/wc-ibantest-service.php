@@ -66,7 +66,7 @@ if ( ! class_exists( 'WC_IBANTEST_Service' ) ) {
 		 */
 		public function __construct() {
 			include_once WC_IBANTEST_PLUGIN_PATH . '/vendor/autoload.php';
-			$this->settings    = WooCommerce_IBANTEST()->get_settings();
+			$this->settings    = IBANTEST_For_WooCommerce()->get_settings();
 			$this->ibantestApi = new \Ibantest\Ibantest();
 			$this->ibantestApi->setToken( $this->settings['apikey'] );
 		}
@@ -157,15 +157,15 @@ if ( ! class_exists( 'WC_IBANTEST_Service' ) ) {
 						];
 						if ( isset( $res['checks'] ) ) {
 							if ( isset( $res['checks']['ibanLength'] ) && false == $res['checks']['ibanLength'] ) {
-								$data['message'] = __( 'IBAN has not the correct length', 'woocommerce-ibantest' );
+								$data['message'] = __( 'IBAN has not the correct length', 'ibantest-for-woocommerce' );
 							} elseif ( isset( $res['checks']['ibanChecksum'] ) && false == $res['checks']['ibanChecksum'] ) {
-								$data['message'] = __( 'IBAN contains an incorrect checksum', 'woocommerce-ibantest' );
+								$data['message'] = __( 'IBAN contains an incorrect checksum', 'ibantest-for-woocommerce' );
 							} elseif ( isset( $res['checks']['ibanChecksum'] ) && false == $res['checks']['ibanChecksum'] ) {
-								$data['message'] = __( 'IBAN structure is incorrect', 'woocommerce-ibantest' );
+								$data['message'] = __( 'IBAN structure is incorrect', 'ibantest-for-woocommerce' );
 							} elseif ( isset( $res['checks']['bankAccountSyntaxVerify'] ) && false == $res['checks']['bankAccountSyntaxVerify'] ) {
-								$data['message'] = __( 'The account number checksum is incorrect', 'woocommerce-ibantest' );
+								$data['message'] = __( 'The account number checksum is incorrect', 'ibantest-for-woocommerce' );
 							} elseif ( isset( $res['checks']['bankExistVerify'] ) && false == $res['checks']['bankExistVerify'] ) {
-								$data['message'] = __( 'This bank code does not exist', 'woocommerce-ibantest' );
+								$data['message'] = __( 'This bank code does not exist', 'ibantest-for-woocommerce' );
 							}
 						}
 					}
@@ -182,19 +182,19 @@ if ( ! class_exists( 'WC_IBANTEST_Service' ) ) {
 			$message = null;
 
 			if ( ! $this->settings['apikey'] || empty( $this->settings['apikey'] ) ) {
-				$message = __( 'IBANTEST: API Key is not configured', 'woocommerce-ibantest' );
+				$message = __( 'IBANTEST: API Key is not configured', 'ibantest-for-woocommerce' );
 			} else {
 				$res = $this->ibantestApi->getRemainingCredits();
 				if ( isset( $res['errorCode'] ) ) {
 					switch ( $res['errorCode'] ) {
 						case "4000":
-							$message = __( 'IBANTEST: No credits available', 'woocommerce-ibantest' );
+							$message = __( 'IBANTEST: No credits available', 'ibantest-for-woocommerce' );
 							break;
 						case "5000":
 							$setting_link = $this->get_setting_link();
 							$message      = sprintf(
-								__( 'IBANTEST: verification failed. Please check your API Key %s', 'woocommerce-ibantest' ),
-								'<a href="' . $setting_link . '">' . __( 'Settings', 'woocommerce-ibantest' ) . '</a>'
+								__( 'IBANTEST: verification failed. Please check your API Key %s', 'ibantest-for-woocommerce' ),
+								'<a href="' . $setting_link . '">' . __( 'Settings', 'ibantest-for-woocommerce' ) . '</a>'
 							);
 							break;
 						default:
@@ -217,7 +217,7 @@ if ( ! class_exists( 'WC_IBANTEST_Service' ) ) {
 }
 
 /**
- * Returns the global instance of WooCommerce IBANTEST
+ * Returns the global instance of IBANTEST for WooCommerce
  */
 function WC_IBANTEST_Service() {
 	return WC_IBANTEST_Service::instance();

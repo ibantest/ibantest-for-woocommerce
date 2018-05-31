@@ -16,8 +16,8 @@ class WC_IBANTEST_Gateway extends WC_Payment_Gateway {
 	 */
 	public function __construct() {
 		$this->id                 = 'ibantest';
-		$this->method_title       = __( 'SEPA Direct Debit (IBANTEST)', 'woocommerce-ibantest' );
-		$this->method_description = __( 'add SEPA Direct Debit as payment method', 'woocommerce-ibantest' );
+		$this->method_title       = __( 'SEPA Direct Debit (IBANTEST)', 'ibantest-for-woocommerce' );
+		$this->method_description = __( 'add SEPA Direct Debit as payment method', 'ibantest-for-woocommerce' );
 		$this->has_fields         = false;
 
 		// Load the form fields.
@@ -91,7 +91,7 @@ class WC_IBANTEST_Gateway extends WC_Payment_Gateway {
 
 		wp_register_script(
 			'ibantest',
-			plugins_url( 'files/js/woocommerce-ibantest' . $suffix . '.js', WC_IBANTEST_MAIN_FILE ),
+			plugins_url( 'files/js/ibantest-for-woocommerce' . $suffix . '.js', WC_IBANTEST_MAIN_FILE ),
 			array( 'jquery', 'wc-cart' ),
 			WC_IBANTEST_VERSION,
 			true
@@ -142,23 +142,23 @@ class WC_IBANTEST_Gateway extends WC_Payment_Gateway {
 
 		$fields = array(
 			'account-iban'   => '<p class="form-row form-row-wide account-iban">
-				<label for="' . esc_attr( $this->id ) . '-account-iban">' . __( 'IBAN', 'woocommerce-ibantest' ) . ' <span class="required">*</span></label>
+				<label for="' . esc_attr( $this->id ) . '-account-iban">' . __( 'IBAN', 'ibantest-for-woocommerce' ) . ' <span class="required">*</span></label>
 				<input id="' . esc_attr( $this->id ) . '-account-iban" class="input-text wc-' . esc_attr( $this->id ) . '-account-iban transform-uppercase" type="text" value="' . ( isset( $data['iban'] ) ? esc_attr( $data['iban'] ) : '' ) . '" autocomplete="off" placeholder="" name="' . esc_attr( $this->id ) . '_account_iban' . '" />
 				<span id="' . esc_attr( $this->id ) . '-account-iban-error" class="error-message" style="display: none;"></span>
 			</p>',
 			'account-bic'    => '<p class="form-row form-row-wide account-bic" style="' . ( isset( $data['bic'] ) ? '' : 'display: none;' ) . '">
-				<label for="' . esc_attr( $this->id ) . '-account-bic">' . __( 'BIC/SWIFT', 'woocommerce-ibantest' ) . '</label>
+				<label for="' . esc_attr( $this->id ) . '-account-bic">' . __( 'BIC/SWIFT', 'ibantest-for-woocommerce' ) . '</label>
 				<input id="' . esc_attr( $this->id ) . '-account-bic" class="input-text wc-' . esc_attr( $this->id ) . '-account-bic transform-uppercase" type="text" value="' . ( isset( $data['bic'] ) ? esc_attr( $data['bic'] ) : '' ) . '" autocomplete="off" placeholder="" name="' . esc_attr( $this->id ) . '_account_bic' . '" />
 				<span id="' . esc_attr( $this->id ) . '-account-bank" style="display: none;"></span>
 			</p>',
 			'account-holder' => '<p class="form-row form-row-wide account-holder">
-				<label for="' . esc_attr( $this->id ) . '-account-holder">' . __( 'Account Holder', 'woocommerce-ibantest' ) . ' <span class="required">*</span></label>
+				<label for="' . esc_attr( $this->id ) . '-account-holder">' . __( 'Account Holder', 'ibantest-for-woocommerce' ) . ' <span class="required">*</span></label>
 				<input id="' . esc_attr( $this->id ) . '-account-holder" class="input-text wc-' . esc_attr( $this->id ) . '-account-holder" value="' . ( isset( $data['holder'] ) ? esc_attr( $data['holder'] ) : '' ) . '" type="text" autocomplete="off" placeholder="" name="' . esc_attr( $this->id ) . '_account_holder' . '" />
 			</p>',
 		);
 		?>
         <fieldset id="wc-<?php echo esc_attr( $this->id ); ?>-form" class="wc-payment-form">
-			<?php do_action( 'woocommerce_ibantest_form_start', $this->id ); ?>
+			<?php do_action( 'ibantest_for_woocommerce_form_start', $this->id ); ?>
 			<?php
 			foreach ( $fields as $field ) {
 				echo $field;
@@ -185,7 +185,7 @@ class WC_IBANTEST_Gateway extends WC_Payment_Gateway {
                 </p>';
 
 			?>
-			<?php do_action( 'woocommerce_ibantest_form_end', $this->id ); ?>
+			<?php do_action( 'ibantest_for_woocommerce_form_end', $this->id ); ?>
             <div class="clear"></div>
         </fieldset>
 		<?php
@@ -213,7 +213,7 @@ class WC_IBANTEST_Gateway extends WC_Payment_Gateway {
 		}
 
 		if ( 'yes' == $this->settings['enable_mandate_checkbox'] && ! isset( $_POST['ibantest_mandate_checkbox'] ) ) {
-			wc_add_notice( __( 'Please agree to SEPA mandate.', 'woocommerce-ibantest' ), 'error' );
+			wc_add_notice( __( 'Please agree to SEPA mandate.', 'ibantest-for-woocommerce' ), 'error' );
 
 			return false;
 		}
@@ -223,19 +223,19 @@ class WC_IBANTEST_Gateway extends WC_Payment_Gateway {
 		$holder = ( isset( $_POST['ibantest_account_holder'] ) ? wc_clean( $_POST['ibantest_account_holder'] ) : '' );
 
 		if ( empty( $iban ) ) {
-			wc_add_notice( __( 'Please insert your IBAN.', 'woocommerce-ibantest' ), 'error' );
+			wc_add_notice( __( 'Please insert your IBAN.', 'ibantest-for-woocommerce' ), 'error' );
 
 			return false;
 		}
 
 		if ( empty( $bic ) ) {
-			wc_add_notice( __( 'Please insert your IBAN.', 'woocommerce-ibantest' ), 'error' );
+			wc_add_notice( __( 'Please insert your IBAN.', 'ibantest-for-woocommerce' ), 'error' );
 
 			return false;
 		}
 
 		if ( empty( $holder ) ) {
-			wc_add_notice( __( 'Please insert the account holder.', 'woocommerce-ibantest' ), 'error' );
+			wc_add_notice( __( 'Please insert the account holder.', 'ibantest-for-woocommerce' ), 'error' );
 
 			return false;
 		}
@@ -250,7 +250,7 @@ class WC_IBANTEST_Gateway extends WC_Payment_Gateway {
 
 		// Validate BIC
 		if ( ! preg_match( '/^([a-zA-Z]){4}([a-zA-Z]){2}([0-9a-zA-Z]){2}([0-9a-zA-Z]{3})?$/', $bic ) ) {
-			wc_add_notice( __( 'Your BIC is invalid.', 'woocommerce-ibantest' ), 'error' );
+			wc_add_notice( __( 'Your BIC is invalid.', 'ibantest-for-woocommerce' ), 'error' );
 		}
 
 		WC()->session->set( 'ibantest', serialize( [ 'iban' => $iban, 'bic' => $bic, 'holder' => $holder ] ) );
@@ -267,7 +267,7 @@ class WC_IBANTEST_Gateway extends WC_Payment_Gateway {
 		$order = wc_get_order( $order_id );
 
 		// Mark as on-hold (we're awaiting the cheque)
-		$order->update_status( 'on-hold', __( 'Awaiting Direct Debit Payment', 'woocommerce-ibantest' ) );
+		$order->update_status( 'on-hold', __( 'Awaiting Direct Debit Payment', 'ibantest-for-woocommerce' ) );
 
 		// Check if cart instance exists (frontend request only)
 		if ( WC()->cart ) {
@@ -319,8 +319,8 @@ class WC_IBANTEST_Gateway extends WC_Payment_Gateway {
 	 */
 	public function show_thank_you() {
 		?>
-        <h3><?php esc_html_e( 'Payment notice:', 'woocommerce-ibantest' ); ?></h3>
-        <p><?php esc_html_e( 'The order amount will be debited directly from your bank account.', 'woocommerce-ibantest' ); ?></p>
+        <h3><?php esc_html_e( 'Payment notice:', 'ibantest-for-woocommerce' ); ?></h3>
+        <p><?php esc_html_e( 'The order amount will be debited directly from your bank account.', 'ibantest-for-woocommerce' ); ?></p>
 		<?php
 	}
 
@@ -336,15 +336,15 @@ class WC_IBANTEST_Gateway extends WC_Payment_Gateway {
             <p class="form-field form-field-wide">
                 <br/>
             <h3>
-				<?php _e( 'Direct debit', 'woocommerce-ibantest' ); ?>:
+				<?php _e( 'Direct debit', 'ibantest-for-woocommerce' ); ?>:
                 <a href="<?php echo add_query_arg( array(
 					'content'       => 'ibantest-sepa',
 					'sepa_order_id' => $order->get_id(),
 					'download'      => true
 				), admin_url( 'export.php' ) ); ?>" target="_blank"
-                   class="download_sepa_xml"><?php _e( 'SEPA XML Download', 'woocommerce-ibantest' ); ?></a>
+                   class="download_sepa_xml"><?php _e( 'SEPA XML Download', 'ibantest-for-woocommerce' ); ?></a>
             </h3>
-            <p><?php echo __( 'IBAN', 'woocommerce-ibantest' ) . ': ' . $this->hide_chars( $iban ) ?> <br/></p>
+            <p><?php echo __( 'IBAN', 'ibantest-for-woocommerce' ) . ': ' . $this->hide_chars( $iban ) ?> <br/></p>
 			<?php
 		}
 	}
@@ -393,16 +393,16 @@ class WC_IBANTEST_Gateway extends WC_Payment_Gateway {
 		}
 
 		$sepa_fields = array(
-			__( 'Account Holder', 'woocommerce-ibantest' ) => WC_IBANTEST_Encryption()->decrypt( $order->get_meta( '_direct_debit_holder' ) ),
-			__( 'IBAN', 'woocommerce-ibantest' )           => $this->hide_chars( WC_IBANTEST_Encryption()->decrypt( $order->get_meta( '_direct_debit_iban' ) ) ),
-			__( 'BIC/SWIFT', 'woocommerce-ibantest' )      => WC_IBANTEST_Encryption()->decrypt( $order->get_meta( '_direct_debit_bic' ) )
+			__( 'Account Holder', 'ibantest-for-woocommerce' ) => WC_IBANTEST_Encryption()->decrypt( $order->get_meta( '_direct_debit_holder' ) ),
+			__( 'IBAN', 'ibantest-for-woocommerce' )           => $this->hide_chars( WC_IBANTEST_Encryption()->decrypt( $order->get_meta( '_direct_debit_iban' ) ) ),
+			__( 'BIC/SWIFT', 'ibantest-for-woocommerce' )      => WC_IBANTEST_Encryption()->decrypt( $order->get_meta( '_direct_debit_bic' ) )
 		);
 
 		if ( $sent_to_admin ) {
-			$sepa_fields[ __( 'Mandate Reference ID', 'woocommerce-ibantest' ) ] = $order->get_meta( '_direct_debit_mandate_id' );
+			$sepa_fields[ __( 'Mandate Reference ID', 'ibantest-for-woocommerce' ) ] = $order->get_meta( '_direct_debit_mandate_id' );
 		}
 		$debit_date            = $order->get_meta( '_direct_debit_mandate_date' );
-		$pre_notification_text = sprintf( __( 'We will debit %s from your account by direct debit on or shortly after %s.', 'woocommerce-ibantest' ), wc_price( $order->get_total(), array( 'currency' => $order->get_currency() ) ), date_i18n( wc_date_format(), $debit_date ) );
+		$pre_notification_text = sprintf( __( 'We will debit %s from your account by direct debit on or shortly after %s.', 'ibantest-for-woocommerce' ), wc_price( $order->get_total(), array( 'currency' => $order->get_currency() ) ), date_i18n( wc_date_format(), $debit_date ) );
 		$mandate               = $this->generate_mandate( $order );
 
 		wc_get_template( 'emails/email-sepa-data.php', array(
@@ -436,7 +436,7 @@ class WC_IBANTEST_Gateway extends WC_Payment_Gateway {
 			'date'          => $order->get_meta( '_direct_debit_mandate_date' ),
 		) );
 
-		$text = __( $this->settings['mandate_text'], 'woocommerce-ibantest' );
+		$text = __( $this->settings['mandate_text'], 'ibantest-for-woocommerce' );
 
 		foreach ( $args as $key => $val ) {
 			$text = str_replace( '[' . $key . ']', $val, $text );
@@ -454,7 +454,7 @@ class WC_IBANTEST_Gateway extends WC_Payment_Gateway {
 	 */
 	public function admin_footer_text( $text ) {
 		if ( isset( $_GET['section'] ) && 'ibantest' === $_GET['section'] ) {
-			$text = sprintf( __( 'If you like <b>IBANTEST for Woocommerce</b> please leave us a %1$s rating. A huge thanks in advance!', 'woocommerce-ibantest' ),
+			$text = sprintf( __( 'If you like <b>IBANTEST for Woocommerce</b> please leave us a %1$s rating. A huge thanks in advance!', 'ibantest-for-woocommerce' ),
 				'<a href="https://wordpress.org/support/plugin/ibantest-for-woocommerce/reviews?rate=5#new-post" target="_blank" class="wc-rating-link" data-rated="Thanks">&#9733;&#9733;&#9733;&#9733;&#9733;</a>' );
 		}
 

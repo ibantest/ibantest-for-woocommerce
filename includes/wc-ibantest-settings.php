@@ -20,85 +20,85 @@ if ( ! class_exists( 'WC_IBANTEST_Settings' ) ) :
 		public static function fields() {
 			$settings = [
 				'enabled'                 => [
-					'title'       => __( 'Enable/Disable SEPA Direct Debit', 'woocommerce-ibantest' ),
-					'label'       => __( 'Enable SEPA Direct Debit', 'woocommerce-ibantest' ),
+					'title'       => __( 'Enable/Disable SEPA Direct Debit', 'ibantest-for-woocommerce' ),
+					'label'       => __( 'Enable SEPA Direct Debit', 'ibantest-for-woocommerce' ),
 					'type'        => 'checkbox',
 					'description' => '',
 					'default'     => 'yes',
 				],
 				'title'                   => [
-					'title'       => __( 'Title', 'woocommerce-ibantest' ),
+					'title'       => __( 'Title', 'ibantest-for-woocommerce' ),
 					'type'        => 'text',
-					'description' => __( 'Payment method title.', 'woocommerce-ibantest' ),
-					'default'     => __( 'SEPA Direct Debit', 'woocommerce-ibantest' ),
+					'description' => __( 'Payment method title.', 'ibantest-for-woocommerce' ),
+					'default'     => __( 'SEPA Direct Debit', 'ibantest-for-woocommerce' ),
 					'desc_tip'    => true,
 				],
 				'description'             => [
-					'title'       => __( 'Description', 'woocommerce-ibantest' ),
+					'title'       => __( 'Description', 'ibantest-for-woocommerce' ),
 					'type'        => 'textarea',
-					'description' => __( 'Payment method description.', 'woocommerce-ibantest' ),
-					'default'     => __( 'Pay conveniently by SEPA Direct Debit.', 'woocommerce-ibantest' ),
+					'description' => __( 'Payment method description.', 'ibantest-for-woocommerce' ),
+					'default'     => __( 'Pay conveniently by SEPA Direct Debit.', 'ibantest-for-woocommerce' ),
 					'desc_tip'    => true,
 				],
 				'credentials'             => [
-					'title'       => __( 'IBANTEST API credentials', 'woocommerce-ibantest' ),
-					'description' => __( 'Create your IBANTEST account now and <b>receive 100 credits for free</b>. <br />- no annual fee<br />- no setup fee <br /> <a href="https://www.ibantest.com/">https://www.ibantest.com</a>', 'woocommerce-ibantest' ),
+					'title'       => __( 'IBANTEST API credentials', 'ibantest-for-woocommerce' ),
+					'description' => __( 'Create your IBANTEST account now and <b>receive 100 credits for free</b>. <br />- no annual fee<br />- no setup fee <br /> <a href="https://www.ibantest.com/">https://www.ibantest.com</a>', 'ibantest-for-woocommerce' ),
 					'type'        => 'title',
 				],
 				'apikey'                  => [
-					'title'       => __( 'IBANTEST API Key', 'woocommerce-ibantest' ),
+					'title'       => __( 'IBANTEST API Key', 'ibantest-for-woocommerce' ),
 					'type'        => 'text',
-					'description' => __( 'Get your API keys from your IBANTEST account.', 'woocommerce-ibantest' ),
+					'description' => __( 'Get your API keys from your IBANTEST account.', 'ibantest-for-woocommerce' ),
 					'default'     => '',
 					'desc_tip'    => true,
 				],
 				'encryption'              => [
-					'title' => __( 'Encryption', 'woocommerce-ibantest' ),
+					'title' => __( 'Encryption', 'ibantest-for-woocommerce' ),
 					'type'  => 'title',
 				],
 				'payment_info'            => [
-					'title' => __( 'SEPA creditor payment information', 'woocommerce-ibantest' ),
+					'title' => __( 'SEPA creditor payment information', 'ibantest-for-woocommerce' ),
 					'type'  => 'title',
 				],
 				'creditor_name'           => [
-					'title' => __( 'Company name', 'woocommerce-ibantest' ),
+					'title' => __( 'Company name', 'ibantest-for-woocommerce' ),
 					'type'  => 'text',
 				],
 				'creditor_account_holder' => [
-					'title' => __( 'Company account holder', 'woocommerce-ibantest' ),
+					'title' => __( 'Company account holder', 'ibantest-for-woocommerce' ),
 					'type'  => 'text',
 				],
 				'creditor_account_iban'   => [
-					'title' => __( 'Company account IBAN', 'woocommerce-ibantest' ),
+					'title' => __( 'Company account IBAN', 'ibantest-for-woocommerce' ),
 					'type'  => 'text',
 				],
 				'creditor_agent_bic'      => [
-					'title' => __( 'Company account BIC', 'woocommerce-ibantest' ),
+					'title' => __( 'Company account BIC', 'ibantest-for-woocommerce' ),
 					'type'  => 'text',
 				],
 				'creditor_id'             => [
-					'title' => __( 'Company identification number', 'woocommerce-ibantest' ),
+					'title' => __( 'Company identification number', 'ibantest-for-woocommerce' ),
 					'type'  => 'text',
 				],
 				'sepa_xml_format'         => [
-					'title'       => __( 'SEPA XML Export Format', 'woocommerce-ibantest' ),
+					'title'       => __( 'SEPA XML Export Format', 'ibantest-for-woocommerce' ),
 					'type'        => 'select',
-					'description' => __( 'Choose the correct format for the SEPA XML export. Please ask your bank what format is required.', 'woocommerce-ibantest' ),
+					'description' => __( 'Choose the correct format for the SEPA XML export. Please ask your bank what format is required.', 'ibantest-for-woocommerce' ),
 					'options'     => array(
-						'pain.001.001.03' => __( 'pain.001.001.03', 'woocommerce-ibantest' ),
-						'pain.001.002.03' => __( 'pain.001.002.03', 'woocommerce-ibantest' ),
-						'pain.008.001.02' => __( 'pain.008.001.02', 'woocommerce-ibantest' ),
-						'pain.008.002.02' => __( 'pain.008.002.02', 'woocommerce-ibantest' ),
+						'pain.001.001.03' => __( 'pain.001.001.03', 'ibantest-for-woocommerce' ),
+						'pain.001.002.03' => __( 'pain.001.002.03', 'ibantest-for-woocommerce' ),
+						'pain.008.001.02' => __( 'pain.008.001.02', 'ibantest-for-woocommerce' ),
+						'pain.008.002.02' => __( 'pain.008.002.02', 'ibantest-for-woocommerce' ),
 					),
 					'desc_tip'    => false,
 					'default'     => 'pain.008.002.02',
 				],
 				'sepa_mandate_section'    => [
-					'title' => __( 'SEPA-Mandate', 'woocommerce-ibantest' ),
+					'title' => __( 'SEPA-Mandate', 'ibantest-for-woocommerce' ),
 					'type'  => 'title',
 				],
 				'mandate_text'            => array(
-					'title'       => __( 'SEPA Mandate Text', 'woocommerce-ibantest' ),
+					'title'       => __( 'SEPA Mandate Text', 'ibantest-for-woocommerce' ),
 					'type'        => 'textarea',
 					'default'     => __( '[creditor_name]
 debtee identification number: [creditor_id]
@@ -125,43 +125,43 @@ This letter is done automatically and is valid without signature.
 
 <hr/>
 
-Please notice: Period for pre-information of the SEPA direct debit is shortened to one day.', 'woocommerce-ibantest' ),
+Please notice: Period for pre-information of the SEPA direct debit is shortened to one day.', 'ibantest-for-woocommerce' ),
 					'css'         => 'min-height: 250px;',
-					'description' => __( 'available placeholders: [creditor_name], [creditor_id], [mandate_id], [creditor_account_holder], [street], [postcode], [city], [country], [creditor_account_iban], [creditor_agent_bic], [city], [date]', 'woocommerce-ibantest' ),
+					'description' => __( 'available placeholders: [creditor_name], [creditor_id], [mandate_id], [creditor_account_holder], [street], [postcode], [city], [country], [creditor_account_iban], [creditor_agent_bic], [city], [date]', 'ibantest-for-woocommerce' ),
 				),
 				'enable_mandate_checkbox' => array(
-					'title'       => __( 'Checkbox agreement', 'woocommerce-ibantest' ),
-					'label'       => __( 'Enable "agree to SEPA mandate" checkbox', 'woocommerce-ibantest' ),
+					'title'       => __( 'Checkbox agreement', 'ibantest-for-woocommerce' ),
+					'label'       => __( 'Enable "agree to SEPA mandate" checkbox', 'ibantest-for-woocommerce' ),
 					'type'        => 'checkbox',
-					'description' => __( 'If enabled, the user has to accept the SEPA Direct Debit Mandate.', 'woocommerce-ibantest' ),
+					'description' => __( 'If enabled, the user has to accept the SEPA Direct Debit Mandate.', 'ibantest-for-woocommerce' ),
 					'default'     => 'yes',
 				),
 				'mandate_checkbox_label'  => array(
-					'title'    => __( 'Checkbox label', 'woocommerce-ibantest' ),
+					'title'    => __( 'Checkbox label', 'ibantest-for-woocommerce' ),
 					'type'     => 'text',
-					'default'  => __( 'I hereby agree to the [link]SEPA Direct Debit Mandate[/link].', 'woocommerce-ibantest' ),
+					'default'  => __( 'I hereby agree to the [link]SEPA Direct Debit Mandate[/link].', 'ibantest-for-woocommerce' ),
 					'desc_tip' => true,
 				),
 				'mandate_id_format'       => array(
-					'title'       => __( 'Mandate ID Format', 'woocommerce-ibantest' ),
+					'title'       => __( 'Mandate ID Format', 'ibantest-for-woocommerce' ),
 					'type'        => 'text',
-					'description' => __( 'You can change the Mandate ID Format by adding a prefix and/or suffix. [id] is a placeholder for the automatically generated ID.', 'woocommerce-ibantest' ),
+					'description' => __( 'You can change the Mandate ID Format by adding a prefix and/or suffix. [id] is a placeholder for the automatically generated ID.', 'ibantest-for-woocommerce' ),
 					'default'     => 'MANDATE[id]',
 				),
 				'options'                 => [
-					'title' => __( 'Options', 'woocommerce-ibantest' ),
+					'title' => __( 'Options', 'ibantest-for-woocommerce' ),
 					'type'  => 'title',
 				],
 				'hide_iban_chars'         => array(
-					'title'       => __( 'Hide IBAN characters', 'woocommerce-ibantest' ),
+					'title'       => __( 'Hide IBAN characters', 'ibantest-for-woocommerce' ),
 					'type'        => 'select',
-					'description' => __( 'Select if you want to hide certain characters of an IBAN', 'woocommerce-ibantest' ),
+					'description' => __( 'Select if you want to hide certain characters of an IBAN', 'ibantest-for-woocommerce' ),
 					'options'     => array(
-						'full'       => __( 'show full IBAN', 'woocommerce-ibantest' ),
-						'last3'      => __( 'show last 3 chars', 'woocommerce-ibantest' ),
-						'last4'      => __( 'show last 4 chars', 'woocommerce-ibantest' ),
-						'firstlast3' => __( 'show first and last 3 chars', 'woocommerce-ibantest' ),
-						'firstlast4' => __( 'show first and last 4 chars', 'woocommerce-ibantest' ),
+						'full'       => __( 'show full IBAN', 'ibantest-for-woocommerce' ),
+						'last3'      => __( 'show last 3 chars', 'ibantest-for-woocommerce' ),
+						'last4'      => __( 'show last 4 chars', 'ibantest-for-woocommerce' ),
+						'firstlast3' => __( 'show first and last 3 chars', 'ibantest-for-woocommerce' ),
+						'firstlast4' => __( 'show first and last 4 chars', 'ibantest-for-woocommerce' ),
 					),
 					'default'     => 'full',
 					'desc_tip'    => false
@@ -169,28 +169,28 @@ Please notice: Period for pre-information of the SEPA direct debit is shortened 
 			];
 
 			if ( WC_IBANTEST_Encryption::instance()->is_enabled() ) {
-				$settings['encryption']['description'] = __( 'Encryption is fully configured. The data is stored in encrypted form.', 'woocommerce-ibantest' );
+				$settings['encryption']['description'] = __( 'Encryption is fully configured. The data is stored in encrypted form.', 'ibantest-for-woocommerce' );
 
 				$settings = array_merge( $settings, array(
 					'remember' => array(
-						'title'       => __( 'Remember for user', 'woocommerce-ibantest' ),
+						'title'       => __( 'Remember for user', 'ibantest-for-woocommerce' ),
 						'type'        => 'select',
-						'description' => __( 'Save account data as user meta if user has/creates a customer account.', 'woocommerce-ibantest' ),
+						'description' => __( 'Save account data as user meta if user has/creates a customer account.', 'ibantest-for-woocommerce' ),
 						'options'     => array(
-							'yes' => __( 'yes', 'woocommerce-ibantest' ),
-							'no'  => __( 'no', 'woocommerce-ibantest' ),
+							'yes' => __( 'yes', 'ibantest-for-woocommerce' ),
+							'no'  => __( 'no', 'ibantest-for-woocommerce' ),
 						),
 						'default'     => 'no',
 					)
 				) );
 			} else {
 				$settings['encryption']['description'] =
-					__( 'This plugin offers the possibility to store the bank data of the users (IBAN, BIC and account holder) encrypted. ', 'woocommerce-ibantest' ) . "<br />" .
-					sprintf( __( 'If you want to use encryption, just insert the following code in your <a href="%s" target="_blank">wp-config.php</a> ', 'woocommerce-ibantest' ), 'https://codex.wordpress.org/Editing_wp-config.php' ) .
+					__( 'This plugin offers the possibility to store the bank data of the users (IBAN, BIC and account holder) encrypted. ', 'ibantest-for-woocommerce' ) . "<br />" .
+					sprintf( __( 'If you want to use encryption, just insert the following code in your <a href="%s" target="_blank">wp-config.php</a> ', 'ibantest-for-woocommerce' ), 'https://codex.wordpress.org/Editing_wp-config.php' ) .
 					'<pre style="overflow: scroll"><code>define( \'WC_IBANTEST_ENCRYPTION_KEY\', \'' . WC_IBANTEST_Encryption()->generate_random_key() . '\' );</code></pre>';
 			}
 
-			return apply_filters( 'woocommerce_ibantest_gateway_settings', $settings );
+			return apply_filters( 'ibantest_for_woocommerce_gateway_settings', $settings );
 		}
 	}
 

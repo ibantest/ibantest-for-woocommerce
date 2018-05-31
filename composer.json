@@ -1,5 +1,5 @@
 {
-    "name": "ibantest/woocommerce-ibantest",
+    "name": "ibantest/ibantest-for-woocommerce",
     "type": "project",
     "require": {
         "ibantest/ibantest-php": "^1.0",

@@ -134,7 +134,7 @@ if ( ! class_exists( 'WC_IBANTEST_Encryption' ) ) {
 }
 
 /**
- * Returns the global instance of WooCommerce IBANTEST
+ * Returns the global instance of IBANTEST for WooCommerce
  */
 function WC_IBANTEST_Encryption() {
 	return WC_IBANTEST_Encryption::instance();

@@ -41,7 +41,7 @@ if ( ! class_exists( 'WC_IBANTEST_Sidebar' ) ) {
                     <img class="ibantest-settings-logo"
                          src="<?php echo esc_url( WC_IBANTEST_ASSETS_URL ); ?>/img/ibantest_logo.gif" height="45"/>
                     <div class="ibantest-sidebar-panel">
-                        <h3><?php echo __( 'Remaining credits', 'woocommerce-ibantest' ) ?></h3>
+                        <h3><?php echo __( 'Remaining credits', 'ibantest-for-woocommerce' ) ?></h3>
                         <p class="remaining-credits"><?php echo number_format( $remainingCredits, 0, ',', '.' ) ?></p>
                         <a class="ibantest-button" href="https://www.ibantest.com/" target="_blank">Buy new credits</a>
                     </div>

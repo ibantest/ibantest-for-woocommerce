@@ -70,7 +70,7 @@ if ( ! class_exists( 'WC_IBANTEST_Export' ) ) {
 		 */
 		public function __construct() {
 			include_once WC_IBANTEST_PLUGIN_PATH . '/vendor/autoload.php';
-			$this->settings = WooCommerce_IBANTEST()->get_settings();
+			$this->settings = IBANTEST_For_WooCommerce()->get_settings();
 		}
 
 		/**
@@ -131,7 +131,7 @@ if ( ! class_exists( 'WC_IBANTEST_Export' ) ) {
 					'debtorName'            => WC_IBANTEST_Encryption()->decrypt( $order->get_meta( '_direct_debit_holder' ) ),
 					'debtorMandate'         => $order->get_meta( '_direct_debit_mandate_id' ) ,
 					'debtorMandateSignDate' => new \DateTime( date('Y-m-d', $order->get_meta( '_direct_debit_mandate_date' ) ) ),
-					'remittanceInformation' => sprintf( __( 'Order %s', 'woocommerce-ibantest' ), $order->get_order_number() ),
+					'remittanceInformation' => sprintf( __( 'Order %s', 'ibantest-for-woocommerce' ), $order->get_order_number() ),
 				)
 			);
 
@@ -153,7 +153,7 @@ if ( ! class_exists( 'WC_IBANTEST_Export' ) ) {
 }
 
 /**
- * Returns the global instance of WooCommerce IBANTEST
+ * Returns the global instance of IBANTEST for WooCommerce
  */
 function WC_IBANTEST_Export() {
 	return WC_IBANTEST_Export::instance();

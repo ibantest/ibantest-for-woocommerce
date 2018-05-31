@@ -66,7 +66,7 @@ class WC_IBANTEST_AJAX extends WC_AJAX {
 			exit;
 		}
 
-		$settings = WooCommerce_IBANTEST()->get_settings();
+		$settings = IBANTEST_For_WooCommerce()->get_settings();
 		$values   = array();
 		parse_str( $_POST['checkout'], $values );
 
@@ -78,7 +78,7 @@ class WC_IBANTEST_AJAX extends WC_AJAX {
 			'postcode'                => wc_clean( isset( $values['billing_postcode'] ) ? $values['billing_postcode'] : '' ),
 			'city'                    => wc_clean( isset( $values['billing_city'] ) ? $values['billing_city'] : '' ),
 			'country'                 => ( isset( $values['billing_country'] ) && isset( WC()->countries->countries[ $values['billing_country'] ] ) ? WC()->countries->countries[ $values['billing_country'] ] : '' ),
-			'mandate_id'              => isset( $values['order_id'] ) ? wc_clean( $values['order_id'] ) : __( 'Will be notified separately', 'woocommerce-ibantest' ),
+			'mandate_id'              => isset( $values['order_id'] ) ? wc_clean( $values['order_id'] ) : __( 'Will be notified separately', 'ibantest-for-woocommerce' ),
 		);
 
 		$args = wp_parse_args( $params, array(
@@ -88,7 +88,7 @@ class WC_IBANTEST_AJAX extends WC_AJAX {
 			'date'          => date_i18n( wc_date_format(), strtotime( "now" ) ),
 		) );
 
-		$text = __( $settings['mandate_text'], 'woocommerce-ibantest' );
+		$text = __( $settings['mandate_text'], 'ibantest-for-woocommerce' );
 
 		foreach ( $args as $key => $val ) {
 			$text = str_replace( '[' . $key . ']', $val, $text );

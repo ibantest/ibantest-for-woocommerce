@@ -6,7 +6,7 @@ Tested up to: 4.9
 Requires PHP: 5.6.0
 WC requires at least: 3.0
 WC tested up to: 3.4
-Stable tag: 1.1.0
+Stable tag: 1.2.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -51,9 +51,12 @@ Go to the plugin-settings for configuration.
 
 == Do you want to report a bug or improve IBANTEST for WooCommerce? ==
 
-[GitHub repository](https://github.com/ibantest/woocommerce-ibantest).
+[GitHub repository](https://github.com/ibantest/ibantest-for-woocommerce).
 
 == Changelog ==
+= 1.2.0 =
+* rename woocommerce-ibantest to ibantest-for-woocommerce
+
 = 1.1.0 =
 * rename assets folder to files for deploy reasons
 

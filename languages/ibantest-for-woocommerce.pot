@@ -1,7 +1,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: woocommerce-ibantest\n"
+"Project-Id-Version: ibantest-for-woocommerce\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -25,8 +25,8 @@ msgstr ""
 #: includes/wc-ibantest-encryption.php:42
 #: includes/wc-ibantest-encryption.php:52 includes/wc-ibantest-export.php:43
 #: includes/wc-ibantest-export.php:53 includes/wc-ibantest-service.php:39
-#: includes/wc-ibantest-service.php:49 woocommerce-ibantest.php:70
-#: woocommerce-ibantest.php:80
+#: includes/wc-ibantest-service.php:49 ibantest-for-woocommerce.php:70
+#: ibantest-for-woocommerce.php:80
 msgid "Nope"
 msgstr ""
 
@@ -139,7 +139,7 @@ msgstr ""
 msgid "IBANTEST: verification failed. Please check your API Key %s"
 msgstr ""
 
-#: includes/wc-ibantest-service.php:197 woocommerce-ibantest.php:148
+#: includes/wc-ibantest-service.php:197 ibantest-for-woocommerce.php:148
 msgid "Settings"
 msgstr ""
 
@@ -386,6 +386,6 @@ msgstr ""
 msgid "SEPA direct debit mandate"
 msgstr ""
 
-#: woocommerce-ibantest.php:149
+#: ibantest-for-woocommerce.php:149
 msgid "Support"
 msgstr ""

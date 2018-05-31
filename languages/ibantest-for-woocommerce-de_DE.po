@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: woocommerce-ibantest\n"
+"Project-Id-Version: ibantest-for-woocommerce\n"
 "Report-Msgid-Bugs-To: https://www.ibantest.com\n"
 "POT-Creation-Date: 2018-05-21 01:24+0200\n"
 "PO-Revision-Date: \n"
@@ -31,7 +31,7 @@ msgstr "Wird gesondert benachrichtigt"
 #: includes/wc-ibantest-encryption.php:42 includes/wc-ibantest-encryption.php:52
 #: includes/wc-ibantest-export.php:43 includes/wc-ibantest-export.php:53
 #: includes/wc-ibantest-service.php:39 includes/wc-ibantest-service.php:49
-#: woocommerce-ibantest.php:71 woocommerce-ibantest.php:81
+#: ibantest-for-woocommerce.php:71 ibantest-for-woocommerce.php:81
 msgid "Nope"
 msgstr "Nein"
 
@@ -151,7 +151,7 @@ msgstr ""
 "IBANTEST: Überprüfung fehlgeschlagen. Bitte überprüfen Sie Ihren API-Schlüssel "
 "%s"
 
-#: includes/wc-ibantest-service.php:197 woocommerce-ibantest.php:149
+#: includes/wc-ibantest-service.php:197 ibantest-for-woocommerce.php:149
 msgid "Settings"
 msgstr "Einstellungen"
 
@@ -465,7 +465,7 @@ msgstr "SEPA-Lastschriftdaten"
 msgid "SEPA direct debit mandate"
 msgstr "SEPA-Lastschrift-Mandat"
 
-#: woocommerce-ibantest.php:150
+#: ibantest-for-woocommerce.php:150
 msgid "Support"
 msgstr "Unterstützung"
 

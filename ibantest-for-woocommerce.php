@@ -3,7 +3,7 @@
  * Plugin Name: IBANTEST for WooCommerce
  * Plugin URI: https://www.ibantest.com/
  * Description: Provides direct debit payment with IBAN and BIC validation for WooCommerce
- * Version: 1.1.0
+ * Version: 1.2.0
  * Author: IBANTEST
  * Author URI: https://www.ibantest.com
  * Requires at least: 3.8
@@ -14,7 +14,7 @@
  * Requires at least WooCommerce: 3.0
  * Tested up to WooCommerce: 3.3
  *
- * Text Domain: woocommerce-ibantest
+ * Text Domain: ibantest-for-woocommerce
  * Domain Path: /languages/
  *
  * @author IBANTEST
@@ -28,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Required minimums and constants
  */
-define( 'WC_IBANTEST_VERSION', '1.1.0' );
+define( 'WC_IBANTEST_VERSION', '1.2.0' );
 define( 'WC_IBANTEST_MIN_PHP_VER', '5.6.0' );
 define( 'WC_IBANTEST_MIN_WC_VER', '3.0.0' );
 define( 'WC_IBANTEST_MAIN_FILE', __FILE__ );
@@ -37,9 +37,9 @@ define( 'WC_IBANTEST_PLUGIN_URL', untrailingslashit( plugin_dir_url( __FILE__ ) 
 define( 'WC_IBANTEST_ASSETS_URL', untrailingslashit( WC_IBANTEST_PLUGIN_URL . '/files' ) );
 define( 'WC_IBANTEST_TEMPLATE_PATH', WC_IBANTEST_PLUGIN_PATH . '/templates/' );
 
-if ( ! class_exists( 'WooCommerce_IBANTEST' ) ) {
+if ( ! class_exists( 'IBANTEST_For_WooCommerce' ) ) {
 
-	class WooCommerce_IBANTEST {
+	class IBANTEST_For_WooCommerce {
 
 		/**
 		 * The reference the *Singleton* instance of this class.
@@ -89,21 +89,21 @@ if ( ! class_exists( 'WooCommerce_IBANTEST' ) ) {
 		public $settings = array();
 
 		/**
-		 * WooCommerce_IBANTEST constructor.
+		 * IBANTEST_For_WooCommerce constructor.
 		 */
 		public function __construct() {
 			$this->settings = get_option( 'woocommerce_ibantest_settings' );
 			add_action( 'init', array( $this, 'init' ), 0 );
 
 			// Loaded action
-			do_action( 'woocommerce_ibantest_loaded' );
+			do_action( 'ibantest_for_woocommerce_loaded' );
 		}
 
 		/**
 		 * Init
 		 */
 		public function init() {
-			do_action( 'before_woocommerce_ibantest_init' );
+			do_action( 'before_ibantest_for_woocommerce_init' );
 			include_once( 'includes/wc-ibantest-ajax.php' );
 			include_once( 'includes/wc-ibantest-encryption.php' );
 			include_once( 'includes/wc-ibantest-export.php' );
@@ -117,14 +117,14 @@ if ( ! class_exists( 'WooCommerce_IBANTEST' ) ) {
 			add_action( 'export_wp', array( WC_IBANTEST_Export(), 'export' ), 0, 1 );
 			add_filter( 'export_args', array( WC_IBANTEST_Export(), 'export_args' ) );
 
-			load_plugin_textdomain( 'woocommerce-ibantest', false, plugin_basename( dirname( __FILE__ ) ) . '/languages/' );
+			load_plugin_textdomain( 'ibantest-for-woocommerce', false, plugin_basename( dirname( __FILE__ ) ) . '/languages/' );
 			add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), array( $this, 'plugin_action_links' ) );
 
 			// Payment gateways
 			add_filter( 'woocommerce_payment_gateways', array( $this, 'add_gateways' ) );
 
 			// Init action
-			do_action( 'woocommerce_ibantest_init' );
+			do_action( 'ibantest_for_woocommerce_init' );
 		}
 
 		/**
@@ -146,8 +146,8 @@ if ( ! class_exists( 'WooCommerce_IBANTEST' ) ) {
 		public function plugin_action_links( $links ) {
 			$setting_link = $this->get_setting_link();
 			$plugin_links = array(
-				'<a href="' . $setting_link . '">' . __( 'Settings', 'woocommerce-ibantest' ) . '</a>',
-				'<a href="https://www.ibantest.com">' . __( 'Support', 'woocommerce-ibantest' ) . '</a>',
+				'<a href="' . $setting_link . '">' . __( 'Settings', 'ibantest-for-woocommerce' ) . '</a>',
+				'<a href="https://www.ibantest.com">' . __( 'Support', 'ibantest-for-woocommerce' ) . '</a>',
 			);
 
 			return array_merge( $plugin_links, $links );
@@ -180,11 +180,11 @@ if ( ! class_exists( 'WooCommerce_IBANTEST' ) ) {
 }
 
 /**
- * Returns the global instance of WooCommerce IBANTEST
+ * Returns the global instance of IBANTEST for WooCommerce
  */
-function WooCommerce_IBANTEST() {
-	return WooCommerce_IBANTEST::instance();
+function IBANTEST_For_WooCommerce() {
+	return IBANTEST_For_WooCommerce::instance();
 }
 
-WooCommerce_IBANTEST();
+IBANTEST_For_WooCommerce();
 
