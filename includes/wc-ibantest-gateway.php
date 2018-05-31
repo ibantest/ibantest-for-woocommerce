@@ -91,7 +91,7 @@ class WC_IBANTEST_Gateway extends WC_Payment_Gateway {
 
 		wp_register_script(
 			'ibantest',
-			plugins_url( 'assets/js/woocommerce-ibantest' . $suffix . '.js', WC_IBANTEST_MAIN_FILE ),
+			plugins_url( 'files/js/woocommerce-ibantest' . $suffix . '.js', WC_IBANTEST_MAIN_FILE ),
 			array( 'jquery', 'wc-cart' ),
 			WC_IBANTEST_VERSION,
 			true
@@ -109,9 +109,9 @@ class WC_IBANTEST_Gateway extends WC_Payment_Gateway {
 
 
 		if ( is_checkout() ) {
-			wp_enqueue_script( 'prettyPhoto', wc()->plugin_url() . '/assets/js/prettyPhoto/jquery.prettyPhoto' . $suffix . '.js', array( 'jquery' ), wc()->version, true );
-			wp_enqueue_script( 'prettyPhoto-init', wc()->plugin_url() . '/assets/js/prettyPhoto/jquery.prettyPhoto.init' . $suffix . '.js', array( 'jquery' ), wc()->version, true );
-			wp_enqueue_style( 'woocommerce_prettyPhoto_css', wc()->plugin_url() . '/assets/css/prettyPhoto.css' );
+			wp_enqueue_script( 'prettyPhoto', wc()->plugin_url() . '/files/js/prettyPhoto/jquery.prettyPhoto' . $suffix . '.js', array( 'jquery' ), wc()->version, true );
+			wp_enqueue_script( 'prettyPhoto-init', wc()->plugin_url() . '/files/js/prettyPhoto/jquery.prettyPhoto.init' . $suffix . '.js', array( 'jquery' ), wc()->version, true );
+			wp_enqueue_style( 'woocommerce_prettyPhoto_css', wc()->plugin_url() . '/files/css/prettyPhoto.css' );
 		}
 	}
 

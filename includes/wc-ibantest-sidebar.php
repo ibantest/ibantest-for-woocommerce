@@ -23,7 +23,7 @@ if ( ! class_exists( 'WC_IBANTEST_Sidebar' ) ) {
 		public function load_admin_css() {
 			wp_enqueue_style(
 				'ibantest_admin',
-				plugins_url( 'assets/css/ibantest-admin.css?v=846724456', WC_IBANTEST_MAIN_FILE )
+				plugins_url( 'files/css/ibantest-admin.css?v=846724456', WC_IBANTEST_MAIN_FILE )
 			);
 		}
 

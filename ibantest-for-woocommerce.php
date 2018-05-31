@@ -34,7 +34,7 @@ define( 'WC_IBANTEST_MIN_WC_VER', '3.0.0' );
 define( 'WC_IBANTEST_MAIN_FILE', __FILE__ );
 define( 'WC_IBANTEST_PLUGIN_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) ) );
 define( 'WC_IBANTEST_PLUGIN_URL', untrailingslashit( plugin_dir_url( __FILE__ ) ) );
-define( 'WC_IBANTEST_ASSETS_URL', untrailingslashit( WC_IBANTEST_PLUGIN_URL . '/assets' ) );
+define( 'WC_IBANTEST_ASSETS_URL', untrailingslashit( WC_IBANTEST_PLUGIN_URL . '/files' ) );
 define( 'WC_IBANTEST_TEMPLATE_PATH', WC_IBANTEST_PLUGIN_PATH . '/templates/' );
 
 if ( ! class_exists( 'WooCommerce_IBANTEST' ) ) {
