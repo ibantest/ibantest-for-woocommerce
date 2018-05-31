@@ -28,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Required minimums and constants
  */
-define( 'WC_IBANTEST_VERSION', '1.0.0' );
+define( 'WC_IBANTEST_VERSION', '1.1.0' );
 define( 'WC_IBANTEST_MIN_PHP_VER', '5.6.0' );
 define( 'WC_IBANTEST_MIN_WC_VER', '3.0.0' );
 define( 'WC_IBANTEST_MAIN_FILE', __FILE__ );
