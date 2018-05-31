@@ -3,7 +3,7 @@
  * Plugin Name: IBANTEST for WooCommerce
  * Plugin URI: https://www.ibantest.com/
  * Description: Provides direct debit payment with IBAN and BIC validation for WooCommerce
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: IBANTEST
  * Author URI: https://www.ibantest.com
  * Requires at least: 3.8
