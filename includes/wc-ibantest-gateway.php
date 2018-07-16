@@ -19,6 +19,16 @@ class WC_IBANTEST_Gateway extends WC_Payment_Gateway {
 		$this->method_title       = __( 'SEPA Direct Debit (IBANTEST)', 'ibantest-for-woocommerce' );
 		$this->method_description = __( 'add SEPA Direct Debit as payment method', 'ibantest-for-woocommerce' );
 		$this->has_fields         = false;
+		$this->supports = array(
+			'products',
+			'subscriptions',
+			'subscription_cancellation',
+			'subscription_suspension',
+			'subscription_reactivation',
+			'subscription_amount_changes',
+			'subscription_date_changes',
+			'subscription_payment_method_change'
+		);
 
 		// Load the form fields.
 		$this->init_form_fields();

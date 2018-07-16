@@ -10,9 +10,9 @@
  * Requires PHP: 5.6.0
  * Tested up to: 4.9
  * WC requires at least: 3.0
- * WC tested up to: 3.3
+ * WC tested up to: 3.4
  * Requires at least WooCommerce: 3.0
- * Tested up to WooCommerce: 3.3
+ * Tested up to WooCommerce: 3.4
  *
  * Text Domain: ibantest-for-woocommerce
  * Domain Path: /languages/
