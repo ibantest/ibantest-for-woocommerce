@@ -1,12 +1,12 @@
 === IBANTEST for WooCommerce  ===
 Contributors: IBANTEST
-Tags: woocommerce, IBAN, BIC, SEPA, direct debit, Lastschrift, sichere Zahlungsweise, Validierung, validation, SWIFT-Code
+Tags: woocommerce, IBAN, BIC, SEPA, direct debit, Lastschrift, sichere Zahlungsweise, Validierung, validation, SWIFT-Code, WooCommerce Subscriptions
 Requires at least: 3.8
 Tested up to: 4.9
 Requires PHP: 5.6.0
 WC requires at least: 3.0
 WC tested up to: 3.4
-Stable tag: 1.2.0
+Stable tag: 1.3.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -35,6 +35,7 @@ Please have a look at our [IBANTEST info page](https://www.ibantest.com/en/wordp
 * saves (encrypted) bank account data in the user account for the next order
 * SEPA Mandate generation and handling
 * show only defined number of IBAN-chars in admin order view
+* supports WooCommerce Subscriptions
 
 == Installation ==
 
@@ -54,6 +55,9 @@ Go to the plugin-settings for configuration.
 [GitHub repository](https://github.com/ibantest/ibantest-for-woocommerce).
 
 == Changelog ==
+= 1.3.0 =
+* WooCommerce Subscriptions support added
+
 = 1.2.0 =
 * rename woocommerce-ibantest to ibantest-for-woocommerce
 
