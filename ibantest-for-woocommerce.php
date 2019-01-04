@@ -3,16 +3,16 @@
  * Plugin Name: IBANTEST for WooCommerce
  * Plugin URI: https://www.ibantest.com/
  * Description: Provides direct debit payment with IBAN and BIC validation for WooCommerce
- * Version: 1.3.0
+ * Version: 1.3.1
  * Author: IBANTEST
  * Author URI: https://www.ibantest.com
  * Requires at least: 3.8
  * Requires PHP: 5.6.0
- * Tested up to: 4.9
+ * Tested up to: 5.0
  * WC requires at least: 3.0
- * WC tested up to: 3.4
+ * WC tested up to: 3.5
  * Requires at least WooCommerce: 3.0
- * Tested up to WooCommerce: 3.4
+ * Tested up to WooCommerce: 3.5
  *
  * Text Domain: ibantest-for-woocommerce
  * Domain Path: /languages/
@@ -28,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Required minimums and constants
  */
-define( 'WC_IBANTEST_VERSION', '1.3.0' );
+define( 'WC_IBANTEST_VERSION', '1.3.1' );
 define( 'WC_IBANTEST_MIN_PHP_VER', '5.6.0' );
 define( 'WC_IBANTEST_MIN_WC_VER', '3.0.0' );
 define( 'WC_IBANTEST_MAIN_FILE', __FILE__ );

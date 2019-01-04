@@ -2,11 +2,11 @@
 Contributors: IBANTEST
 Tags: woocommerce, IBAN, BIC, SEPA, direct debit, Lastschrift, sichere Zahlungsweise, Validierung, validation, SWIFT-Code, WooCommerce Subscriptions
 Requires at least: 3.8
-Tested up to: 4.9
+Tested up to: 5.0
 Requires PHP: 5.6.0
 WC requires at least: 3.0
-WC tested up to: 3.4
-Stable tag: 1.3.0
+WC tested up to: 3.5
+Stable tag: 1.3.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -55,6 +55,10 @@ Go to the plugin-settings for configuration.
 [GitHub repository](https://github.com/ibantest/ibantest-for-woocommerce).
 
 == Changelog ==
+= 1.3.1 =
+* WooCommerce 3.5 compatibility
+* Wordpress 5 compatibility
+
 = 1.3.0 =
 * WooCommerce Subscriptions support added
 
