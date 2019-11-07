@@ -239,7 +239,7 @@ class WC_IBANTEST_Gateway extends WC_Payment_Gateway {
 		}
 
 		if ( empty( $bic ) ) {
-			wc_add_notice( __( 'Please insert your IBAN.', 'ibantest-for-woocommerce' ), 'error' );
+			wc_add_notice( __( 'Please insert your BIC.', 'ibantest-for-woocommerce' ), 'error' );
 
 			return false;
 		}
