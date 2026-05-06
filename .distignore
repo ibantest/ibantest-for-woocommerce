@@ -1,0 +1,15 @@
+.git
+.gitignore
+.distignore
+.phpunit.result.cache
+build
+bin
+tests
+phpunit.xml.dist
+vendor
+node_modules
+composer.phar
+package.json
+package-lock.json
+*.log
+*.cache

@@ -1,0 +1,334 @@
+@media (min-width: 1180px) {
+	.ibantest-wrapper:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	.ibantest-main {
+		width: 70%;
+		float: left;
+		padding: 0 2% 0 0;
+		border-right: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+
+	.ibantest-sidebar {
+		width: 28%;
+		max-width: 350px;
+		margin-left: 2%;
+		float: left;
+		box-sizing: border-box;
+		text-align: center;
+		font-family: ibantest, sans-serif;
+	}
+}
+
+.ibantest-main {
+	max-width: 980px;
+}
+
+.ibantest-settings-card,
+.ibantest-onboarding,
+.ibantest-sidebar-panel {
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 12px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.ibantest-settings-card-header p {
+	display: block;
+	margin: 0;
+	color: #646970;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+.ibantest-settings-card {
+	margin: 0 0 18px;
+	padding: 0;
+	overflow: hidden;
+}
+
+.ibantest-settings-card-header {
+	padding: 18px 22px;
+	background: #f6f7f7;
+	border-bottom: 1px solid #dcdcde;
+}
+
+.ibantest-settings-card-header h3 {
+	margin: 0 0 5px;
+	font-size: 17px;
+	line-height: 1.35;
+}
+
+.ibantest-settings-table.form-table {
+	margin: 0;
+	table-layout: fixed;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+.ibantest-settings-table.form-table tr {
+	position: relative;
+}
+
+.ibantest-settings-table.form-table tr:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 1px;
+	background: #f0f0f1;
+}
+
+.ibantest-settings-table.form-table th,
+.ibantest-settings-table.form-table td {
+	vertical-align: top;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.ibantest-settings-table.form-table th {
+	width: 260px;
+	padding-left: 22px;
+	padding-right: 24px;
+	color: #1d2327;
+	font-weight: 600;
+	line-height: 1.35;
+}
+
+.ibantest-settings-table.form-table td {
+	padding-right: 22px;
+	color: #1d2327;
+}
+
+.ibantest-settings-table.form-table td fieldset {
+	margin: 0;
+}
+
+.ibantest-settings-table.form-table td fieldset label {
+	line-height: 1.5;
+}
+
+.ibantest-settings-table.form-table tr:last-child th,
+.ibantest-settings-table.form-table tr:last-child td {
+	border-bottom: 0;
+}
+
+.ibantest-settings-table.form-table tr:last-child:after {
+	display: none;
+}
+
+.ibantest-settings-table .description {
+	max-width: 620px;
+	margin-top: 8px;
+	color: #646970;
+	font-size: 13px;
+	line-height: 1.55;
+}
+
+.ibantest-settings-table input.regular-input,
+.ibantest-settings-table textarea.wide-input,
+.ibantest-settings-table select {
+	width: 100%;
+	max-width: 560px;
+}
+
+.ibantest-settings-table input[type="checkbox"] {
+	margin-top: 2px;
+}
+
+.ibantest-settings-table textarea.wide-input {
+	min-height: 150px;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	line-height: 1.5;
+}
+
+.ibantest-encryption-note {
+	margin: 20px 22px 22px;
+	padding: 14px 16px;
+	background: #f0f8f1;
+	border-left: 4px solid #00a32a;
+	border-radius: 8px;
+	color: #1d2327;
+}
+
+.ibantest-encryption-note.needs-attention {
+	background: #fff8e5;
+	border-left-color: #dba617;
+}
+
+.ibantest-encryption-note pre {
+	margin: 12px 0 0;
+	padding: 12px;
+	overflow: auto;
+	background: #1d2327;
+	border-radius: 6px;
+	color: #f6f7f7;
+	white-space: pre-wrap;
+}
+
+@media (max-width: 782px) {
+	.ibantest-onboarding,
+	.ibantest-settings-card-header {
+		padding: 18px;
+	}
+
+	.ibantest-settings-table.form-table,
+	.ibantest-settings-table.form-table tbody,
+	.ibantest-settings-table.form-table tr,
+	.ibantest-settings-table.form-table th,
+	.ibantest-settings-table.form-table td {
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.ibantest-settings-table.form-table th {
+		padding: 18px 18px 6px;
+	}
+
+	.ibantest-settings-table.form-table td {
+		padding: 0 18px 18px;
+	}
+
+	.ibantest-settings-table.form-table tr {
+		border-bottom: 1px solid #f0f0f1;
+	}
+
+	.ibantest-settings-table.form-table tr:after {
+		display: none;
+	}
+
+	.ibantest-settings-table.form-table tr:last-child {
+		border-bottom: 0;
+	}
+
+	.ibantest-settings-table.form-table th,
+	.ibantest-settings-table.form-table td {
+		border-bottom: 0;
+	}
+}
+
+.ibantest-settings-logo {
+	display: block;
+	width: 100%;
+	max-width: 260px;
+	height: auto;
+	margin: 0 auto 20px;
+}
+
+.ibantest-sidebar h3 {
+	font-family: ibantestHeadline, sans-serif;
+	font-size: 20px;
+	line-height: 1.2;
+}
+
+.remaining-credits {
+	font-size: 18px;
+	color: #005FA6;
+	font-weight: bold;
+}
+
+.remaining-credits-unavailable {
+	color: #666;
+}
+
+.ibantest-credit-status {
+	padding: 8px 10px;
+	background: #f0f6fc;
+	border-left: 4px solid #005FA6;
+	text-align: left;
+}
+
+.ibantest-credit-status-error {
+	background: #fcf0f1;
+	border-left-color: #b32d2e;
+}
+
+.ibantest-onboarding {
+	margin: 0 0 24px;
+	padding: 20px;
+	border-left: 4px solid #005FA6;
+}
+
+.ibantest-onboarding h3 {
+	margin: 0 0 8px;
+	font-size: 1.3em;
+}
+
+.ibantest-onboarding-logo {
+	display: block;
+	max-width: 220px;
+	height: auto;
+	margin: 0 0 16px;
+}
+
+.ibantest-eyebrow {
+	margin: 0 0 4px;
+	color: #005FA6;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+
+.ibantest-setup-steps {
+	margin: 18px 0 0 22px;
+}
+
+.ibantest-setup-steps li {
+	margin-bottom: 16px;
+}
+
+.ibantest-api-key-row {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.ibantest-api-key-row input {
+	max-width: 420px;
+}
+
+.ibantest-onboarding-complete {
+	border-left-color: #00a32a;
+}
+
+a.ibantest-button {
+	display: inline-block;
+	background: #005FA6;
+	color: #fff;
+	text-decoration: none;
+	padding: 0.75em 2em;
+	-webkit-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	border-radius: 0.5em;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ibantest-sidebar p {
+	margin-bottom: 1.5em;
+}
+
+.ibantest-sidebar img {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.ibantest-sidebar-panel {
+	padding: 20px;
+}
+
+.wc-settings-sub-title a, .wc-settings-sub-title a:hover, .wc-settings-sub-title a:click, .wc-settings-sub-title a:visited, .wc-settings-sub-title a:focus {
+	border:none;
+	outline:none;
+	text-decoration:none;
+	color:black;
+}
+

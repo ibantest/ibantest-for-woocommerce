@@ -1,273 +1,273 @@
-# Copyright (C) 2026 IBANTEST
-# This file is distributed under the same license as the IBANTEST for WooCommerce plugin.
 msgid ""
 msgstr ""
 "Project-Id-Version: IBANTEST for WooCommerce 2.0.0\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ibantest-for-woocommerce\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Report-Msgid-Bugs-To: https://www.ibantest.com/\n"
+"Last-Translator: IBANTEST <info@ibantest.com>\n"
+"Language-Team: Italian <info@ibantest.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-05-06T21:15:46+02:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.12.0\n"
+"POT-Creation-Date: 2026-05-04T22:41:14+02:00\n"
+"PO-Revision-Date: 2026-05-05 20:59\n"
+"Language: it_IT\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Cursor\n"
 "X-Domain: ibantest-for-woocommerce\n"
 
 #. Plugin Name of the plugin
 #: ibantest-for-woocommerce.php
 msgid "IBANTEST for WooCommerce"
-msgstr ""
+msgstr "IBANTEST per WooCommerce"
 
 #. Plugin URI of the plugin
 #: ibantest-for-woocommerce.php
 msgid "https://www.ibantest.com/"
-msgstr ""
+msgstr "https://www.ibantest.com/"
 
 #. Description of the plugin
 #: ibantest-for-woocommerce.php
 msgid "Provides SEPA direct debit payments with IBAN and BIC validation for WooCommerce."
-msgstr ""
+msgstr "Provides SEPA direct debit payments with IBAN and BIC validation for WooCommerce."
 
 #. Author of the plugin
 #: ibantest-for-woocommerce.php
 #: src/Admin/SettingsRenderer.php:109
 #: src/Admin/SettingsRenderer.php:166
 msgid "IBANTEST"
-msgstr ""
+msgstr "IBANTEST"
 
 #. Author URI of the plugin
 #: ibantest-for-woocommerce.php
 msgid "https://www.ibantest.com"
-msgstr ""
+msgstr "https://www.ibantest.com"
 
 #: src/Admin/AdminAjax.php:23
 #: src/Admin/AdminAjax.php:44
 msgid "You are not allowed to refresh IBANTEST credits."
-msgstr ""
+msgstr "Non hai i permessi per aggiornare i crediti IBANTEST."
 
 #: src/Admin/AdminAjax.php:55
 #: src/Admin/SettingsRenderer.php:116
 #: src/Gateway.php:177
 msgid "Credit balance could not be refreshed."
-msgstr ""
+msgstr "Il saldo crediti non può essere aggiornato."
 
 #: src/Admin/AdminAjax.php:66
 #: src/Admin/SettingsRenderer.php:114
 msgid "Credit balance refreshed."
-msgstr ""
+msgstr "Saldo crediti aggiornato."
 
 #: src/Admin/AdminAjax.php:68
 #: src/Admin/SettingsRenderer.php:123
 msgid "Not available"
-msgstr ""
+msgstr "Non disponibile"
 
 #: src/Admin/AdminAjax.php:78
 msgid "You are not allowed to update the IBANTEST API key."
-msgstr ""
+msgstr "Non hai i permessi per aggiornare la chiave API IBANTEST."
 
 #: src/Admin/AdminAjax.php:88
 msgid "Please enter your IBANTEST API key."
-msgstr ""
+msgstr "Inserisci la tua chiave API IBANTEST."
 
 #: src/Admin/AdminAjax.php:96
 msgid "We could not verify this API key. Please check the key and try again."
-msgstr ""
+msgstr "Non è stato possibile verificare questa chiave API. Controllala e riprova."
 
 #: src/Admin/AdminAjax.php:108
 msgid "API key verified and saved. IBANTEST validation is ready."
-msgstr ""
+msgstr "Chiave API verificata e salvata. La validazione IBANTEST è pronta."
 
 #: src/Admin/AdminAjax.php:119
 #: src/Admin/SettingsRenderer.php:139
 msgid "Last updated: never"
-msgstr ""
+msgstr "Ultimo aggiornamento: mai"
 
 #. translators: %s: localized date and time.
 #: src/Admin/AdminAjax.php:124
 #: src/Admin/SettingsRenderer.php:135
 #, php-format
 msgid "Last updated: %s"
-msgstr ""
+msgstr "Ultimo aggiornamento: %s"
 
 #: src/Admin/SettingsRenderer.php:70
 msgid "Setup and API access"
-msgstr ""
+msgstr "Configurazione e accesso API"
 
 #: src/Admin/SettingsRenderer.php:71
 msgid "Turn the payment method on and connect it with your IBANTEST account for live validation and credit tracking."
-msgstr ""
+msgstr "Turn the payment method on and connect it with your IBANTEST account for live validation and credit tracking."
 
 #: src/Admin/SettingsRenderer.php:75
 msgid "Checkout presentation"
-msgstr ""
+msgstr "Presentazione nel checkout"
 
 #: src/Admin/SettingsRenderer.php:76
 msgid "Control the payment name, explanatory text and IBAN validation behavior shown to customers during checkout."
-msgstr ""
+msgstr "Control the payment name, explanatory text and IBAN validation behavior shown to customers during checkout."
 
 #: src/Admin/SettingsRenderer.php:80
 msgid "Encrypted bank data storage"
-msgstr ""
+msgstr "Archiviazione cifrata dei dati bancari"
 
 #: src/Admin/SettingsRenderer.php:81
 msgid "IBAN and BIC values are stored encrypted. This section shows whether the required encryption key is available."
-msgstr ""
+msgstr "IBAN and BIC values are stored encrypted. This section shows whether the required encryption key is available."
 
 #: src/Admin/SettingsRenderer.php:86
 msgid "Creditor and SEPA export"
-msgstr ""
+msgstr "Creditore ed esportazione SEPA"
 
 #: src/Admin/SettingsRenderer.php:87
 msgid "Enter the creditor information used for mandate text and generated SEPA XML files."
-msgstr ""
+msgstr "Enter the creditor information used for mandate text and generated SEPA XML files."
 
 #: src/Admin/SettingsRenderer.php:91
 msgid "SEPA mandate"
-msgstr ""
+msgstr "Mandato SEPA"
 
 #: src/Admin/SettingsRenderer.php:92
 msgid "Define the mandate wording, customer consent checkbox and how IBAN values are masked in admin and email output."
-msgstr ""
+msgstr "Define the mandate wording, customer consent checkbox and how IBAN values are masked in admin and email output."
 
 #: src/Admin/SettingsRenderer.php:111
 msgid "Credit Overview"
-msgstr ""
+msgstr "Panoramica crediti"
 
 #: src/Admin/SettingsRenderer.php:112
 msgid "Remaining credits"
-msgstr ""
+msgstr "Crediti residui"
 
 #: src/Admin/SettingsRenderer.php:118
 msgid "Automatic refresh failed. Showing cached credit balance."
-msgstr ""
+msgstr "Aggiornamento automatico non riuscito. Viene mostrato il saldo crediti memorizzato nella cache."
 
 #: src/Admin/SettingsRenderer.php:125
 msgid "Add a valid IBANTEST API key and save the settings to show the current credit balance."
-msgstr ""
+msgstr "Add a valid IBANTEST API key and save the settings to show the current credit balance."
 
 #: src/Admin/SettingsRenderer.php:145
 msgid "Refresh credits now"
-msgstr ""
+msgstr "Aggiorna crediti ora"
 
 #: src/Admin/SettingsRenderer.php:149
 msgid "Buy new credits"
-msgstr ""
+msgstr "Acquista nuovi crediti"
 
 #: src/Admin/SettingsRenderer.php:167
 msgid "Setup guide"
-msgstr ""
+msgstr "Guida alla configurazione"
 
 #: src/Admin/SettingsRenderer.php:168
 msgid "Connect your IBANTEST account"
-msgstr ""
+msgstr "Collega il tuo account IBANTEST"
 
 #: src/Admin/SettingsRenderer.php:170
 msgid "Add your API key to enable live IBAN validation and show your current credit balance."
-msgstr ""
+msgstr "Add your API key to enable live IBAN validation and show your current credit balance."
 
 #: src/Admin/SettingsRenderer.php:175
 msgid "Do you already have an IBANTEST account?"
-msgstr ""
+msgstr "Hai già un account IBANTEST?"
 
 #. translators: %s: IBANTEST registration link.
 #: src/Admin/SettingsRenderer.php:180
 #, php-format
 msgid "No account yet? Register at IBANTEST and receive <strong>100 free credits</strong>: %s"
-msgstr ""
+msgstr "No account yet? Register at IBANTEST and receive <strong>100 free credits</strong>: %s"
 
 #: src/Admin/SettingsRenderer.php:181
 msgid "Create IBANTEST account"
-msgstr ""
+msgstr "Crea account IBANTEST"
 
 #: src/Admin/SettingsRenderer.php:187
 msgid "Paste your API key"
-msgstr ""
+msgstr "Incolla la tua chiave API"
 
 #: src/Admin/SettingsRenderer.php:188
 msgid "You can find the API key in your IBANTEST account. We will verify it before saving."
-msgstr ""
+msgstr "You can find the API key in your IBANTEST account. We will verify it before saving."
 
 #: src/Admin/SettingsRenderer.php:190
 msgid "IBANTEST API key"
-msgstr ""
+msgstr "Chiave API IBANTEST"
 
 #: src/Admin/SettingsRenderer.php:192
 msgid "Check and save API key"
-msgstr ""
+msgstr "Verifica e salva la chiave API"
 
 #: src/Admin/SettingsRenderer.php:198
 msgid "Start validating IBANs"
-msgstr ""
+msgstr "Inizia a validare gli IBAN"
 
 #: src/Admin/SettingsRenderer.php:199
 msgid "After a successful check, your key is saved below and the credit overview updates automatically."
-msgstr ""
+msgstr "After a successful check, your key is saved below and the credit overview updates automatically."
 
 #: src/Ajax.php:24
 #: src/Ajax.php:37
 msgid "Security check failed."
-msgstr ""
+msgstr "Controllo di sicurezza non riuscito."
 
 #: src/Ajax.php:28
 msgid "Please wait before validating another IBAN."
-msgstr ""
+msgstr "Attendi prima di validare un altro IBAN."
 
 #: src/Checkout/CheckoutFields.php:17
 #: src/Emails/DirectDebitEmailRenderer.php:23
 #: src/Gateway.php:327
 #: src/Orders/DirectDebitOrderRenderer.php:34
 msgid "IBAN"
-msgstr ""
+msgstr "IBAN"
 
 #: src/Checkout/CheckoutFields.php:20
 #: src/Gateway.php:136
 #: src/Gateway.php:340
 #: assets/js/blocks-checkout.js:36
 msgid "Enter your IBAN, for example DE02 6005 0101 0002 0343 04."
-msgstr ""
+msgstr "Inserisci il tuo IBAN, ad esempio DE02 6005 0101 0002 0343 04."
 
 #: src/Checkout/CheckoutFields.php:32
 #: src/Gateway.php:325
 #: src/Support/Settings.php:132
 msgid "I hereby agree to the SEPA Direct Debit Mandate."
-msgstr ""
+msgstr "Accetto il mandato di addebito diretto SEPA."
 
 #: src/Checkout/CheckoutFields.php:37
 #: src/Gateway.php:332
 #: assets/js/blocks-checkout.js:269
 msgid "Show SEPA mandate"
-msgstr ""
+msgstr "Mostra mandato SEPA"
 
 #: src/Emails/DirectDebitEmailRenderer.php:22
 msgid "Account Holder"
-msgstr ""
+msgstr "Intestatario del conto"
 
 #: src/Emails/DirectDebitEmailRenderer.php:24
 msgid "BIC/SWIFT"
-msgstr ""
+msgstr "BIC/SWIFT"
 
 #: src/Emails/DirectDebitEmailRenderer.php:28
 msgid "Mandate Reference ID"
-msgstr ""
+msgstr "Riferimento mandato"
 
 #: src/Emails/DirectDebitEmailRenderer.php:32
 #: src/Emails/DirectDebitEmailRenderer.php:39
 msgid "SEPA direct debit data"
-msgstr ""
+msgstr "Dati addebito diretto SEPA"
 
 #: src/Gateway.php:34
 msgid "SEPA Direct Debit (IBANTEST)"
-msgstr ""
+msgstr "Addebito diretto SEPA (IBANTEST)"
 
 #: src/Gateway.php:35
 msgid "Accept SEPA direct debit payments with IBAN validation."
-msgstr ""
+msgstr "Accetta pagamenti con addebito diretto SEPA con validazione IBAN."
 
 #: src/Gateway.php:53
 #: src/Support/Settings.php:28
 msgid "SEPA Direct Debit"
-msgstr ""
+msgstr "Addebito diretto SEPA"
 
 #: src/Gateway.php:129
 #: src/Gateway.php:333
@@ -275,19 +275,19 @@ msgstr ""
 #: assets/js/blocks-checkout.js:113
 #: assets/js/blocks-checkout.js:170
 msgid "Please check your bank account data."
-msgstr ""
+msgstr "Controlla i dati del tuo conto bancario."
 
 #: src/Gateway.php:130
 #: src/Gateway.php:334
 #: assets/js/blocks-checkout.js:94
 msgid "Checking IBAN..."
-msgstr ""
+msgstr "Verifica IBAN in corso..."
 
 #: src/Gateway.php:131
 #: src/Gateway.php:335
 #: assets/js/blocks-checkout.js:63
 msgid "IBAN valid."
-msgstr ""
+msgstr "IBAN valido."
 
 #: src/Gateway.php:132
 #: src/Gateway.php:336
@@ -295,320 +295,323 @@ msgstr ""
 #: assets/js/blocks-checkout.js:138
 #: assets/js/blocks-checkout.js:144
 msgid "Enter your IBAN to start the check."
-msgstr ""
+msgstr "Inserisci il tuo IBAN per avviare la verifica."
 
 #: src/Gateway.php:133
 #: src/Gateway.php:337
 msgid "Please wait until the IBAN check is complete."
-msgstr ""
+msgstr "Attendi il completamento della verifica IBAN."
 
 #: src/Gateway.php:134
 #: src/Gateway.php:338
 msgid "IBAN check could not be completed. Please try again."
-msgstr ""
+msgstr "La verifica IBAN non può essere completata. Riprova."
 
 #: src/Gateway.php:135
 #: src/Gateway.php:339
 msgid "BIC"
-msgstr ""
+msgstr "BIC"
 
 #: src/Gateway.php:175
 msgid "Refreshing credits..."
-msgstr ""
+msgstr "Aggiornamento crediti..."
 
 #: src/Gateway.php:176
 msgid "Checking API key..."
-msgstr ""
+msgstr "Verifica chiave API..."
 
 #: src/Gateway.php:207
 msgid "SEPA Direct Debit is not configured for encrypted storage."
-msgstr ""
+msgstr "L’addebito diretto SEPA non è configurato per l’archiviazione cifrata."
 
 #: src/Gateway.php:212
 #: src/Services/IbanService.php:28
 msgid "Please insert your IBAN."
-msgstr ""
+msgstr "Inserisci il tuo IBAN."
 
 #: src/Gateway.php:217
 msgid "Please agree to the SEPA mandate."
-msgstr ""
+msgstr "Accetta il mandato SEPA."
 
 #: src/Gateway.php:224
 #: src/Services/IbanService.php:342
 msgid "Your IBAN is invalid."
-msgstr ""
+msgstr "Il tuo IBAN non è valido."
 
 #: src/Gateway.php:236
 msgid "Your BIC is invalid."
-msgstr ""
+msgstr "Il tuo BIC non è valido."
 
 #: src/Gateway.php:259
 msgid "Awaiting SEPA Direct Debit payment."
-msgstr ""
+msgstr "In attesa del pagamento tramite addebito diretto SEPA."
 
 #: src/Gateway.php:274
 msgid "Payment notice:"
-msgstr ""
+msgstr "Avviso di pagamento:"
 
 #: src/Gateway.php:275
 msgid "The order amount will be debited directly from your bank account."
-msgstr ""
+msgstr "L’importo dell’ordine sarà addebitato direttamente sul tuo conto bancario."
 
 #: src/Orders/DirectDebitOrderRenderer.php:32
 msgid "Direct debit"
-msgstr ""
+msgstr "Addebito diretto"
 
 #: src/Orders/DirectDebitOrderRenderer.php:36
 msgid "Download SEPA XML"
-msgstr ""
+msgstr "Scarica XML SEPA"
 
 #: src/Plugin.php:88
 msgid "Settings"
-msgstr ""
+msgstr "Impostazioni"
 
 #: src/Plugin.php:93
 msgid "Support"
-msgstr ""
+msgstr "Supporto"
 
 #: src/Plugin.php:103
 msgid "IBANTEST for WooCommerce requires WooCommerce to be installed and active."
-msgstr ""
+msgstr "IBANTEST for WooCommerce requires WooCommerce to be installed and active."
 
 #. translators: %s: wp-config.php constant name.
 #: src/Plugin.php:119
 #, php-format
 msgid "IBANTEST is inactive until a valid %s constant is configured. Bank account data is never stored without encryption."
-msgstr ""
+msgstr "IBANTEST is inactive until a valid %s constant is configured. Bank account data is never stored without encryption."
 
 #: src/SepaExport.php:24
 msgid "You are not allowed to export SEPA files."
-msgstr ""
+msgstr "Non hai i permessi per esportare file SEPA."
 
 #: src/SepaExport.php:29
 msgid "Invalid SEPA export request."
-msgstr ""
+msgstr "Richiesta di esportazione SEPA non valida."
 
 #: src/SepaExport.php:34
 msgid "Order is not payable by IBANTEST SEPA Direct Debit."
-msgstr ""
+msgstr "L’ordine non è pagabile con addebito diretto SEPA IBANTEST."
 
 #: src/SepaExport.php:39
 #: src/SepaExport.php:115
 msgid "SEPA XML could not be generated."
-msgstr ""
-
-#: src/SepaExport.php:89
-msgid "SEPA XML could not be generated because the debtor IBAN is missing or cannot be decrypted."
-msgstr ""
-
-#: src/SepaExport.php:90
-msgid "SEPA XML could not be generated because the debtor name is missing or cannot be decrypted."
-msgstr ""
-
-#: src/SepaExport.php:91
-msgid "SEPA XML could not be generated because the debtor mandate reference is missing."
-msgstr ""
+msgstr "Non è stato possibile generare l’XML SEPA."
 
 #. translators: %s: order number.
 #: src/SepaExport.php:103
 #, php-format
 msgid "Order %s"
-msgstr ""
-
-#: src/SepaExport.php:132
-msgid "SEPA XML could not be generated because the order total is invalid."
-msgstr ""
+msgstr "Ordine %s"
 
 #: src/Services/IbanService.php:35
 #: src/Services/IbanService.php:330
 msgid "IBAN contains an incorrect checksum."
-msgstr ""
+msgstr "L’IBAN contiene una somma di controllo errata."
 
 #: src/Services/IbanService.php:327
 msgid "IBAN has not the correct length."
-msgstr ""
+msgstr "L’IBAN non ha la lunghezza corretta."
 
 #: src/Services/IbanService.php:333
 msgid "IBAN structure is incorrect."
-msgstr ""
+msgstr "La struttura dell’IBAN non è corretta."
 
 #: src/Services/IbanService.php:336
 msgid "The account number checksum is incorrect."
-msgstr ""
+msgstr "La somma di controllo del numero di conto non è corretta."
 
 #: src/Services/IbanService.php:339
 msgid "This bank code does not exist."
-msgstr ""
+msgstr "Questo codice bancario non esiste."
 
 #: src/Services/IbanService.php:354
 msgid "IBAN validation is currently not possible. Please try again later."
-msgstr ""
+msgstr "La verifica IBAN non è attualmente possibile. Riprova più tardi."
 
 #: src/Support/Mandate.php:24
 msgid "Will be notified separately"
-msgstr ""
+msgstr "Sarà notificato separatamente"
 
 #: src/Support/Settings.php:19
 msgid "Enable/Disable SEPA Direct Debit"
-msgstr ""
+msgstr "Abilita/disabilita addebito diretto SEPA"
 
 #: src/Support/Settings.php:20
 msgid "Enable SEPA Direct Debit"
-msgstr ""
+msgstr "Abilita addebito diretto SEPA"
 
 #: src/Support/Settings.php:25
 msgid "Title"
-msgstr ""
+msgstr "Titolo"
 
 #: src/Support/Settings.php:27
 msgid "Payment method title shown during checkout."
-msgstr ""
+msgstr "Titolo del metodo di pagamento mostrato nel checkout."
 
 #: src/Support/Settings.php:32
 msgid "Description"
-msgstr ""
+msgstr "Descrizione"
 
 #: src/Support/Settings.php:34
 msgid "Payment method description shown during checkout."
-msgstr ""
+msgstr "Descrizione del metodo di pagamento mostrata nel checkout."
 
 #: src/Support/Settings.php:35
 msgid "Pay conveniently by SEPA Direct Debit."
-msgstr ""
+msgstr "Paga comodamente con addebito diretto SEPA."
 
 #: src/Support/Settings.php:39
 msgid "IBAN check timing"
-msgstr ""
+msgstr "Tempistica verifica IBAN"
 
 #: src/Support/Settings.php:41
 msgid "Choose when the checkout should validate the IBAN before the final server-side order validation."
-msgstr ""
+msgstr "Choose when the checkout should validate the IBAN before the final server-side order validation."
 
 #: src/Support/Settings.php:43
 msgid "Automatically after typing delay"
-msgstr ""
+msgstr "Automaticamente dopo un ritardo di digitazione"
 
 #: src/Support/Settings.php:44
 msgid "When leaving the IBAN field"
-msgstr ""
+msgstr "Quando si esce dal campo IBAN"
 
 #: src/Support/Settings.php:45
 msgid "Only when placing the order"
-msgstr ""
+msgstr "Solo al momento dell’ordine"
 
 #: src/Support/Settings.php:50
 msgid "IBAN check delay in milliseconds"
-msgstr ""
+msgstr "Ritardo verifica IBAN in millisecondi"
 
 #: src/Support/Settings.php:52
 msgid "Delay before automatic validation starts. Only used when automatic validation after typing delay is selected."
-msgstr ""
+msgstr "Delay before automatic validation starts. Only used when automatic validation after typing delay is selected."
 
 #: src/Support/Settings.php:61
 msgid "IBANTEST API Key"
-msgstr ""
+msgstr "Chiave API IBANTEST"
 
 #. translators: %s: IBANTEST account registration link.
 #: src/Support/Settings.php:65
 #, php-format
 msgid "Used for live IBAN validation and your credit overview. No account yet? Register at IBANTEST and receive 100 free credits: %s"
-msgstr ""
+msgstr "Used for live IBAN validation and your credit overview. No account yet? Register at IBANTEST and receive 100 free credits: %s"
 
 #: src/Support/Settings.php:72
 msgid "Encryption"
-msgstr ""
+msgstr "Cifratura"
 
 #: src/Support/Settings.php:77
 msgid "SEPA creditor payment information"
-msgstr ""
+msgstr "Informazioni di pagamento del creditore SEPA"
 
 #: src/Support/Settings.php:81
 msgid "Company name"
-msgstr ""
+msgstr "Nome azienda"
 
 #: src/Support/Settings.php:85
 msgid "Company account holder"
-msgstr ""
+msgstr "Intestatario del conto aziendale"
 
 #: src/Support/Settings.php:89
 msgid "Company account IBAN"
-msgstr ""
+msgstr "IBAN del conto aziendale"
 
 #: src/Support/Settings.php:93
 msgid "Company account BIC"
-msgstr ""
+msgstr "BIC del conto aziendale"
 
 #: src/Support/Settings.php:97
 msgid "Company identification number"
-msgstr ""
+msgstr "Numero identificativo azienda"
 
 #: src/Support/Settings.php:101
 msgid "SEPA XML Export Format"
-msgstr ""
+msgstr "Formato esportazione XML SEPA"
 
 #: src/Support/Settings.php:103
 msgid "Ask your bank which direct debit format is required."
-msgstr ""
+msgstr "Chiedi alla tua banca quale formato di addebito diretto è richiesto."
 
 #: src/Support/Settings.php:112
 msgid "SEPA Mandate"
-msgstr ""
+msgstr "Mandato SEPA"
 
 #: src/Support/Settings.php:116
 msgid "SEPA Mandate Text"
-msgstr ""
+msgstr "Testo mandato SEPA"
 
 #: src/Support/Settings.php:120
 msgid "Available placeholders: [creditor_name], [creditor_id], [mandate_id], [account_holder], [street], [postcode], [city], [country], [iban], [bic], [date]."
 msgstr ""
+"[creditor_name]\n"
+"Identificativo creditore: [creditor_id]\n"
+"Riferimento mandato: [mandate_id]\n"
+"\n"
+"Mandato di addebito diretto SEPA\n"
+"Autorizzo il creditore a incassare pagamenti dal mio conto tramite addebito diretto. Allo stesso tempo, incarico la mia banca di onorare gli addebiti diretti disposti dal creditore.\n"
+"\n"
+"Debitore:\n"
+"Intestatario del conto: [account_holder]\n"
+"Via: [street]\n"
+"Codice postale: [postcode]\n"
+"Città: [city]\n"
+"Paese: [country]\n"
+"IBAN: [iban]\n"
+"BIC: [bic]\n"
+"\n"
+"[city], [date], [account_holder]\n"
+"\n"
+"Questo mandato è stato creato elettronicamente ed è valido senza firma."
 
 #: src/Support/Settings.php:123
 msgid "Checkbox agreement"
-msgstr ""
+msgstr "Consenso tramite checkbox"
 
 #: src/Support/Settings.php:124
 msgid "Require agreement to the SEPA mandate"
-msgstr ""
+msgstr "Richiedi il consenso al mandato SEPA"
 
 #: src/Support/Settings.php:126
 msgid "If enabled, customers must accept the SEPA Direct Debit Mandate."
-msgstr ""
+msgstr "Se abilitato, i clienti devono accettare il mandato di addebito diretto SEPA."
 
 #: src/Support/Settings.php:130
 msgid "Checkbox label"
-msgstr ""
+msgstr "Etichetta checkbox"
 
 #: src/Support/Settings.php:135
 msgid "Mandate ID Format"
-msgstr ""
+msgstr "Formato ID mandato"
 
 #: src/Support/Settings.php:137
 msgid "[id] is replaced by the WooCommerce order number."
-msgstr ""
+msgstr "[id] viene sostituito dal numero d’ordine WooCommerce."
 
 #: src/Support/Settings.php:141
 msgid "Hide IBAN characters"
-msgstr ""
+msgstr "Nascondi caratteri IBAN"
 
 #: src/Support/Settings.php:144
 msgid "Show full IBAN"
-msgstr ""
+msgstr "Mostra IBAN completo"
 
 #: src/Support/Settings.php:145
 msgid "Show last 3 characters"
-msgstr ""
+msgstr "Mostra ultimi 3 caratteri"
 
 #: src/Support/Settings.php:146
 msgid "Show last 4 characters"
-msgstr ""
+msgstr "Mostra ultimi 4 caratteri"
 
 #: src/Support/Settings.php:147
 msgid "Show first and last 3 characters"
-msgstr ""
+msgstr "Mostra primi e ultimi 3 caratteri"
 
 #: src/Support/Settings.php:148
 msgid "Show first and last 4 characters"
-msgstr ""
+msgstr "Mostra primi e ultimi 4 caratteri"
 
 #: src/Support/Settings.php:158
 msgid ""
@@ -632,13 +635,48 @@ msgid ""
 "\n"
 "This mandate was created electronically and is valid without signature."
 msgstr ""
+"[creditor_name]\n"
+"Identificativo creditore: [creditor_id]\n"
+"Riferimento mandato: [mandate_id]\n"
+"\n"
+"Mandato di addebito diretto SEPA\n"
+"Autorizzo il creditore a incassare pagamenti dal mio conto tramite addebito diretto. Allo stesso tempo, incarico la mia banca di onorare gli addebiti diretti disposti dal creditore.\n"
+"\n"
+"Debitore:\n"
+"Intestatario del conto: [account_holder]\n"
+"Via: [street]\n"
+"Codice postale: [postcode]\n"
+"Città: [city]\n"
+"Paese: [country]\n"
+"IBAN: [iban]\n"
+"BIC: [bic]\n"
+"\n"
+"[city], [date], [account_holder]\n"
+"\n"
+"Questo mandato è stato creato elettronicamente ed è valido senza firma."
 
 #: src/Support/Settings.php:166
 msgid "Encryption is configured. Bank account data is stored encrypted."
-msgstr ""
+msgstr "La cifratura è configurata. I dati bancari vengono salvati cifrati."
 
 #. translators: %s: generated wp-config.php snippet.
 #: src/Support/Settings.php:171
 #, php-format
 msgid "Add this constant to wp-config.php before enabling the gateway: %s"
-msgstr ""
+msgstr "Aggiungi questa costante a wp-config.php prima di abilitare il gateway: %s"
+
+#: src/SepaExport.php:89
+msgid "SEPA XML could not be generated because the debtor IBAN is missing or cannot be decrypted."
+msgstr "Non è stato possibile generare l’XML SEPA perché l’IBAN del debitore manca o non può essere decifrato."
+
+#: src/SepaExport.php:90
+msgid "SEPA XML could not be generated because the debtor name is missing or cannot be decrypted."
+msgstr "Non è stato possibile generare l’XML SEPA perché il nome del debitore manca o non può essere decifrato."
+
+#: src/SepaExport.php:91
+msgid "SEPA XML could not be generated because the debtor mandate reference is missing."
+msgstr "Non è stato possibile generare l’XML SEPA perché manca il riferimento del mandato del debitore."
+
+#: src/SepaExport.php:132
+msgid "SEPA XML could not be generated because the order total is invalid."
+msgstr "Non è stato possibile generare l’XML SEPA perché il totale dell’ordine non è valido."

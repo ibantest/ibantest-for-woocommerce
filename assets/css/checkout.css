@@ -1,0 +1,159 @@
+.ibantest-block-field {
+	margin: 0 0 1.25rem;
+}
+
+.wc-ibantest-form,
+.ibantest-block-fields {
+	--ibantest-border: #d9d9d9;
+	--ibantest-focus: #1e6bff;
+	--ibantest-muted: #646970;
+	--ibantest-success: #238636;
+	--ibantest-success-bg: #f0fbf3;
+	--ibantest-error: #b42318;
+	--ibantest-error-bg: #fff4f2;
+}
+
+.ibantest-block-field label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: 600;
+}
+
+.ibantest-block-field input,
+#ibantest-account-iban {
+	appearance: none;
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 3rem;
+	padding: 0.625rem 0.875rem;
+	border: 1px solid var(--ibantest-border);
+	border-radius: 6px;
+	background: #fff;
+	color: #1e1e1e;
+	font-size: 1rem;
+	line-height: 1.5;
+	transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ibantest-block-field input:focus,
+#ibantest-account-iban:focus {
+	border-color: var(--ibantest-focus);
+	outline: none;
+	box-shadow: 0 0 0 1px var(--ibantest-focus);
+}
+
+.ibantest-block-field .description {
+	display: block;
+	margin-top: 0.5rem;
+	color: var(--ibantest-muted);
+	font-size: 0.875em;
+	line-height: 1.4;
+}
+
+#ibantest-account-iban-description {
+	display: block;
+	margin-top: 0.5rem;
+	line-height: 1.4;
+}
+
+.ibantest-validation-status,
+.ibantest-bank-details {
+	margin-top: 0.75rem;
+	border-radius: 8px;
+	font-size: 0.95em;
+	line-height: 1.4;
+}
+
+.ibantest-validation-status.is-loading,
+.ibantest-validation-status.is-neutral {
+	padding: 0.75rem 0.875rem;
+	border: 1px solid #dcdcde;
+	background: #f6f7f7;
+	color: #2c3338;
+}
+
+.ibantest-validation-status.is-valid {
+	padding: 0.75rem 0.875rem;
+	border: 1px solid #b7e4c7;
+	border-left: 4px solid var(--ibantest-success);
+	background: var(--ibantest-success-bg);
+	color: #155724;
+	font-weight: 600;
+}
+
+.ibantest-validation-status.is-invalid {
+	padding: 0.75rem 0.875rem;
+	border: 1px solid #f1b8b3;
+	border-left: 4px solid var(--ibantest-error);
+	background: var(--ibantest-error-bg);
+	color: var(--ibantest-error);
+	font-weight: 600;
+}
+
+.ibantest-bank-details {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem 0.875rem;
+	padding: 0.875rem;
+	border: 1px solid #e5e7eb;
+	background: #fafafa;
+	color: #3c434a;
+}
+
+.ibantest-bank-details span {
+	display: inline-flex;
+	align-items: center;
+	min-height: 1.5rem;
+}
+
+.ibantest-bank-details span:first-child {
+	font-weight: 600;
+	color: #1e1e1e;
+}
+
+.ibantest-bank-details span:not(:first-child) {
+	padding-left: 0.875rem;
+	border-left: 1px solid #dcdcde;
+}
+
+.wc-ibantest-form .legal,
+.ibantest-block-fields .wc-block-components-checkbox {
+	margin-top: 1rem;
+	margin-bottom: 0.75rem;
+}
+
+.wc-ibantest-form .legal .checkbox,
+.ibantest-block-fields .wc-block-components-checkbox {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.5rem;
+	line-height: 1.4;
+}
+
+.wc-ibantest-form .legal input,
+.ibantest-block-fields .wc-block-components-checkbox input {
+	margin-top: 0.2rem;
+}
+
+#ibantest-show-mandate,
+.ibantest-block-fields > .button {
+	min-height: 2.5rem;
+	padding: 0.5rem 0.875rem;
+	border: 1px solid #1e1e1e;
+	border-radius: 6px;
+	background: #fff;
+	color: #1e1e1e;
+	font-weight: 600;
+	line-height: 1.2;
+	text-decoration: none;
+	transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+#ibantest-show-mandate:hover,
+#ibantest-show-mandate:focus,
+.ibantest-block-fields > .button:hover,
+.ibantest-block-fields > .button:focus {
+	border-color: #1e1e1e;
+	background: #1e1e1e;
+	color: #fff;
+}
